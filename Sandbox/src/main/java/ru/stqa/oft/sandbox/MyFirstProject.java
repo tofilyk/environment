@@ -1,10 +1,10 @@
 package ru.stqa.oft.sandbox;
 
-public class MyFi2r {
+public class MyFirstProject {
 
 
 
 public static void main(String[] args){
-System.out.println("Hello3");
+System.out.println("Hello Test1");
 }
 }

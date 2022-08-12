@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8561191-3efc-44fb-bcac-4443ffed95cd" name="Changes" comment="Merge remote-tracking branch 'java_ptf/main'" />
+    <list default="true" id="a8561191-3efc-44fb-bcac-4443ffed95cd" name="Changes" comment="Merge remote-tracking branch 'java_ptf/main'">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/MyFi2r.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/MyFirisP.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +67,11 @@
         <option value="Konstantin Tofiliuk &lt;58227047+tofilyk@users.noreply.github.com&gt;" />
       </list>
     </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -87,7 +95,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_directory_selection": "C:/Devel/java_ptf/Sandbox/src/main/java",
-    "last_opened_file_path": "C:/Devel/java_ptf/Sandbox/build.gradle",
+    "last_opened_file_path": "C:/Users/tofil/OneDrive/Рабочий стол/KostaProject",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
@@ -97,8 +108,8 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="MyFi2r" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.MyFi2r" />
+    <configuration name="MyFirstProject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.MyFirstProject" />
       <module name="Sandbox.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,7 +117,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MyFi2r" />
+        <item itemvalue="Application.MyFirstProject" />
       </list>
     </recent_temporary>
   </component>
