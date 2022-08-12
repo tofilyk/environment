@@ -1,5 +1,7 @@
+package ru.stqa.oft.sandbox;
 
-public class MyFir{
+public class MyFi2r {
+
 
 
 public static void main(String[] args){
