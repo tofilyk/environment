@@ -5,6 +5,6 @@ public class MyFi2r {
 
 
 public static void main(String[] args){
-System.out.println("Hello344");
+System.out.println("Hello3");
 }
 }
