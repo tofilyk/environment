@@ -1,6 +1,6 @@
 package ru.stqa.oft.sandbox;
 
-public class MyFi2r {
+public class MyFirstProject {
 
 
 
