@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8561191-3efc-44fb-bcac-4443ffed95cd" name="Changes" comment="Merge remote-tracking branch 'java_ptf/main'">
+    <list default="true" id="a8561191-3efc-44fb-bcac-4443ffed95cd" name="Changes" comment="upd16">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/MyFi2r.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/MyFirisP.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,9 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="java_ptf/main" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -144,7 +146,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660304738891</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="upd16">
+      <created>1660319786772</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660319786772</updated>
+    </task>
+    <task id="LOCAL-00004" summary="upd16">
+      <created>1660319813203</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660319813203</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +178,7 @@
     <MESSAGE value="Upd010" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Merge remote-tracking branch 'java_ptf/main'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'java_ptf/main'" />
+    <MESSAGE value="upd16" />
+    <option name="LAST_COMMIT_MESSAGE" value="upd16" />
   </component>
 </project>
