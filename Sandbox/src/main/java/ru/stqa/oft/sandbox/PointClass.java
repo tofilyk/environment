@@ -1,10 +1,10 @@
 package ru.stqa.oft.sandbox;
 
 public class PointClass {
-    public double x1 = 10;
-    public double x2 = 19;
-    public double y1 = 9;
-    public double y2 = 25;
+    public double x1 ;
+    public double x2;
+    public double y1 ;
+    public double y2 ;
     double p1 = (x2 - x1) * (x2 - x1);
     double p2 = (y2 - y1) * (y2 - y1);
 
@@ -16,7 +16,8 @@ public class PointClass {
     }
 
     public double Distance() {
-        return Math.sqrt(p1 + p2);
+        return Math.sqrt(((x2 - x1) * (x2 - x1)+(y2 - y1) * (y2 - y1)));
+
 
     }
 }
