@@ -35,6 +35,7 @@ public class SquareTests {
         PointClass ps= new PointClass(15,19,12,18);
         Assert.assertEquals((ps.y2-ps.y1)*(ps.y2-ps.y1),36);
     };
+
 }
 
 

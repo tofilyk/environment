@@ -11,7 +11,9 @@ public class MyFirstProject {
         Rectangle r = new Rectangle(4,6);
 
         System.out.println("Площадь прямоугольник со сторонами  " + r.a + " и " + r.b + "=" + r.area());
-    }
+
+
+            }
 
     public static void hellow(String samebode) {
         System.out.println("Hello " + samebode);
