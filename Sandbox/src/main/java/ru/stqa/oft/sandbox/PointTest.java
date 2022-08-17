@@ -11,8 +11,7 @@ public class PointTest {
         this.x2 = x2;
         double p1 = (x2 - x1) * (x2 - x1);
         return p1;
-    }
-    ;
+    }    ;
     public double p2(double y1, double y2) { // Точка №2( имеет две координаты)
         this.y1 = y1;
         this.y2 = y2;
