@@ -6,6 +6,8 @@ public class Rectangle {
     public  double b;
     public  double s;
 
+
+
     public  Rectangle(double a, double b){
         this.a=a;
         this.b=b;

@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/MyFirstProject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/MyFirstProject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/PointTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/PointTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/PointTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/MyFirstProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/MyFirstProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/PointClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/PointTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Points.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/oft/sandbox/SquareTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/oft/sandbox/SquareTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +126,40 @@
       <command value="gradle --warning-mode all" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.PointTest">
+  <component name="RunManager" selected="Application.Point">
+    <configuration name="Easy (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Easy" />
+      <module name="Sandbox.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Easy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Easy" />
+      <module name="Sandbox.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyFirstProject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.MyFirstProject" />
+      <module name="Sandbox.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Point" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Point" />
       <module name="Sandbox.main" />
@@ -145,54 +186,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Points" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Points" />
-      <module name="Sandbox.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Rectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Rectangle" />
-      <module name="Sandbox.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SquareTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.oft.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.SquareTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PointTest" />
-        <item itemvalue="Application.Rectangle" />
-        <item itemvalue="Application.Points" />
         <item itemvalue="Application.Point" />
-        <item itemvalue="JUnit.SquareTests" />
+        <item itemvalue="Application.Easy" />
+        <item itemvalue="Application.Easy (1)" />
+        <item itemvalue="Application.PointTest" />
+        <item itemvalue="Application.MyFirstProject" />
       </list>
     </recent_temporary>
   </component>
