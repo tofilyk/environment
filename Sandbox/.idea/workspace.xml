@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21" />
+    <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/PointTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

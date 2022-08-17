@@ -25,6 +25,8 @@ public class PointTest {
     public static void main(String[] args) { // Вывод на консоль где задаем координаты для точки 1 и точки 2
         PointTest tMethod = new PointTest();
         System.out.println("Дистанция между двумя точками  " +tMethod.distance(tMethod.p1(9, 6), tMethod.p2(2, 12)));
+         System.out.println("Точка №1 имеет координаты "  + tMethod.x1 +" и " + tMethod.x2);
+        System.out.println("Точка №2 имеет координаты "  + tMethod.y1 +" и " + tMethod.y2);
 
     }
 };
