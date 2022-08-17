@@ -8,20 +8,18 @@ public class Point {
         this.y = y;
     }
 
-    public double distance(ru.stqa.oft.sandbox.Point p1, ru.stqa.oft.sandbox.Point p2) {
-
-        return Math.sqrt((p2.x - p1.x) * (p2.x - p1.x) + (p2.y - p1.y) * (p2.y - p1.y));
+    public double distance(Point p2) {
+        double var1 = (p2.x - x) * (p2.x - x);
+        double var2 = (p2.y - y) * (p2.y - y);
+        return Math.sqrt(var1 + var2);
 
     }
 
     public static void main(String[] args) {
-        Point p1 = new ru.stqa.oft.sandbox.Point(7, 6);
-        Point p2 = new ru.stqa.oft.sandbox.Point(13, 12);
-        double trash = p1.x + p2.x;
+        Point p1 = new Point(7, 6);
+        Point p2 = new Point(13, 14);
 
-        System.out.println("Расстояние между точками a (" + p1.x + "; " + p1.y +
-                ") и b (" + p2.x + "; " + p2.y + ") = " + p1.distance(p1, p2));
-        System.out.println(trash);
+        System.out.println("Расстояние между точками " + p1.distance(p2));
 
 
     }
