@@ -18,7 +18,9 @@ public class PointClass {
 
     public double Distance() {
         return Math.sqrt(((x2 - x1) * (x2 - x1)+(y2 - y1) * (y2 - y1)));
-
-
+    }
+    public static void main(String[] args) {
+        PointClass ps= new PointClass(10,19,9,25);
+        System.out.println("Расстояние на двумерной плоскости ="+ " " +ps.Distance());
     }
 }

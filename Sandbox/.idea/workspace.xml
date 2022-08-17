@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Point2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/PointClass2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Points.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/PointTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/MyFirstProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/MyFirstProject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/PointClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/PointClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/oft/sandbox/SquareTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/oft/sandbox/SquareTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Points.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Points.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Rectangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Sandbox" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Sandbox" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
             </expand>
             <select />
@@ -76,19 +81,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Devel/java_ptf/Sandbox/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Devel/java_ptf/Sandbox/build.gradle&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "C:/Devel/java_ptf/Sandbox/src/main/java",
+    "last_opened_file_path": "C:/Devel/java_ptf/Sandbox/build.gradle",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.stqa.oft.lesson1" />
@@ -98,13 +103,29 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="gradle --info" />
       <command value="gradle build" />
+      <command value="gradle --info" />
+      <command value="gradle --status" />
+      <command value="gradle buildDependents" />
+      <command value="gradle --warning-mode=all" />
+      <command value=" --help" />
+      <command value="--help" />
+      <command value="gradle --help" />
+      <command value="gradle --show-version" />
+      <command value="--show-version" />
+      <command value="gradle help" />
+      <command value="gradle --console" />
+      <command value="gradle :dependencies" />
+      <command value="gradle warning-mode all" />
+      <command value="gradle Dorg.gradle.warning.mode=(all,fail,none,summary)" />
+      <command value="Dorg.gradle.warning.mode=(all,fail,none,summary)" />
+      <command value="gradle --Dorg.gradle.warning.mode=(all,fail,none,summary)" />
+      <command value="gradle --warning-mode all" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Points">
-    <configuration name="MyFirstProject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.MyFirstProject" />
+  <component name="RunManager" selected="Application.PointTest">
+    <configuration name="Point" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Point" />
       <module name="Sandbox.main" />
       <extension name="coverage">
         <pattern>
@@ -116,15 +137,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Point3 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Point3" />
-      <module name="Sandbox.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Point3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Point3" />
+    <configuration name="PointTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.PointTest" />
       <module name="Sandbox.main" />
       <extension name="coverage">
         <pattern>
@@ -149,8 +163,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Test3" />
+    <configuration name="Rectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Rectangle" />
       <module name="Sandbox.main" />
       <extension name="coverage">
         <pattern>
@@ -162,13 +176,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SquareTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.oft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.SquareTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PointTest" />
+        <item itemvalue="Application.Rectangle" />
         <item itemvalue="Application.Points" />
-        <item itemvalue="Application.MyFirstProject" />
-        <item itemvalue="Application.Test3" />
-        <item itemvalue="Application.Point3 (1)" />
-        <item itemvalue="Application.Point3" />
+        <item itemvalue="Application.Point" />
+        <item itemvalue="JUnit.SquareTests" />
       </list>
     </recent_temporary>
   </component>

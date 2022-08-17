@@ -1,9 +1,10 @@
 apply plugin: 'java'
 
 apply plugin: 'application'
-
 mainClassName ="MyFir"
+
 
 repositories {mavenCentral()}
 dependencies {
-    implementation 'org.testng:testng:7.3.0'}
+    implementation 'org.testng:testng:7.3.0'
+    }
