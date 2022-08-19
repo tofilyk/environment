@@ -3,6 +3,8 @@ package ru.stqa.oft.sandbox;
 import org.junit.Test;
 import org.testng.Assert;
 
+
+
 public class SquareTests {
 
     @Test
@@ -51,6 +53,7 @@ public  void test1(){
 
 
     };
+
 
 }
 

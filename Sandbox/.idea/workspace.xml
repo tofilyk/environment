@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Easy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/oft/sandbox/SquareTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/oft/sandbox/SquareTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/oft/sandbox/SquareTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/oft/sandbox/SquareTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +21,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/../NewModule1">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../addressbook-web-tests">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../addressbook-web-tests1">
+      <ProjectState>
+        <option name="isInclusion" value="true" />
+      </ProjectState>
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../newtest">
       <ProjectState />
     </projectState>
   </component>
@@ -27,19 +45,18 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/../addressbook-web-tests">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/../addressbook-web-tests1">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/../newtest">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Sandbox" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Sandbox" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -80,13 +97,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
     "last_directory_selection": "C:/Devel/java_ptf/Sandbox/src/main/java",
-    "last_opened_file_path": "C:/Devel/java_ptf/Sandbox/build.gradle",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "last_opened_file_path": "C:/Devel/java_ptf/newtest/build.gradle",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
@@ -118,11 +137,40 @@
       <command value="Dorg.gradle.warning.mode=(all,fail,none,summary)" />
       <command value="gradle --Dorg.gradle.warning.mode=(all,fail,none,summary)" />
       <command value="gradle --warning-mode all" />
+      <command value="gradle " />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SquareTests">
-    <configuration name="Easy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Easy (1)">
+    <configuration name="Easy (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Easy" />
+      <module name="Sandbox.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Easy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Eclipse Adoptium\jdk-8.0.345.1-hotspot\jre" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Easy" />
+      <module name="Sandbox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyFirstProject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.MyFirstProject" />
       <module name="Sandbox.main" />
       <extension name="coverage">
         <pattern>
@@ -147,60 +195,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.oft.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.SquareTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="gradle-wrapper.jar" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/../addressbook-web-tests/gradle/wrapper/gradle-wrapper.jar" />
+      <method v="2" />
     </configuration>
-    <configuration name="SquareTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sandbox.test" />
+    <configuration name="GroupCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NewModule1.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
+          <option name="PATTERN" value="ru.stqa.pft.addressbook2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.oft.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.SquareTests" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SquareTests.testArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.oft.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.SquareTests" />
-      <option name="METHOD_NAME" value="testArea" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook2" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook2.GroupCreationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SquareTests" />
-        <item itemvalue="Application.Point" />
-        <item itemvalue="JUnit.SquareTests.test1" />
-        <item itemvalue="JUnit.SquareTests.testArea" />
+        <item itemvalue="Application.Easy (1)" />
         <item itemvalue="Application.Easy" />
+        <item itemvalue="Application.Point" />
+        <item itemvalue="Application.MyFirstProject" />
+        <item itemvalue="TestNG.GroupCreationTests" />
       </list>
     </recent_temporary>
   </component>
