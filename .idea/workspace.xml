@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b97552a-94af-4528-8481-d481120b1e41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/CreateGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/CreateGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/CreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/CreateGroup.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/CreateUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/GroupData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/GroupDelete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/TestBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/UserData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/CreateGroup.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/CreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/GroupData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/tests/GroupDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/TestBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/model/UserData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +120,7 @@
       <recent name="ru.stqa.pft.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupDelete">
+  <component name="RunManager" selected="TestNG.CreateGroup">
     <configuration name="MyFirstProgram" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -122,12 +134,12 @@
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.*" />
+          <option name="PATTERN" value="appmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.CreateGroup" />
+      <option name="MAIN_CLASS_NAME" value="tests.CreateGroup" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -139,7 +151,7 @@
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.*" />
+          <option name="PATTERN" value="appmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,12 +168,12 @@
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.*" />
+          <option name="PATTERN" value="appmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.CreateUser" />
+      <option name="MAIN_CLASS_NAME" value="tests.CreateUser" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -173,12 +185,12 @@
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.*" />
+          <option name="PATTERN" value="appmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.GroupDelete" />
+      <option name="MAIN_CLASS_NAME" value="tests.GroupDelete" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -190,7 +202,7 @@
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.*" />
+          <option name="PATTERN" value="appmanager.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -205,8 +217,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupDelete" />
         <item itemvalue="TestNG.CreateGroup" />
+        <item itemvalue="TestNG.GroupDelete" />
         <item itemvalue="TestNG.CreateUser" />
         <item itemvalue="TestNG.CreateGroup88" />
         <item itemvalue="TestNG.TestAuthChrome" />
