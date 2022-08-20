@@ -7,4 +7,5 @@ mainClassName ="MyFir"
 repositories {mavenCentral()}
 dependencies {
     implementation 'org.testng:testng:7.3.0'
+
     }

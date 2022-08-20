@@ -4,23 +4,74 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b97552a-94af-4528-8481-d481120b1e41" name="Changes" comment="" />
+    <list default="true" id="9b97552a-94af-4528-8481-d481120b1e41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sandbox/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/out/test/classes/ru/stqa/oft/sandbox/SquareTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/out/test/classes/ru/stqa/oft/sandbox/SquareTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/777">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/888">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Katalon">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/NewTestProject">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/NewtestKatalon">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/Sandbox">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Test5">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/addressbook-web-tests">
       <ProjectState />
     </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/addressbook-web-tests">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="addressbook-web-tests" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="addressbook-web-tests" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -38,16 +89,128 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Devel/java_ptf/Sandbox/build.gradle",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Devel/java_ptf/addressbook-web-tests/build.gradle&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="TestNG.CreateGroup88">
+    <configuration name="MyFirstProgram" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="MyFirstProgram" />
+      <module name="addressbook-web-tests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAuth" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Sandbox" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.stqa.oft.sandbox.TestAuth&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="SquareTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.oft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.SquareTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateGroup88" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.CreateGroup88" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAuth (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.oft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.TestAuth" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAuthChrome" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.TestAuthChrome" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.CreateGroup88" />
+        <item itemvalue="TestNG.TestAuthChrome" />
+        <item itemvalue="JUnit.SquareTests" />
+        <item itemvalue="TestNG.TestAuth (1)" />
+        <item itemvalue="Gradle.TestAuth" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,5 +221,35 @@
       <updated>1660296666745</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/TestAuth.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/TestAuth.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

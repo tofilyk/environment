@@ -5,20 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/stqa/oft/sandbox/Easy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/oft/sandbox/SquareTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/oft/sandbox/SquareTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/oft/sandbox/SquareTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/oft/sandbox/SquareTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/../NewModule1">
@@ -34,6 +39,9 @@
       <ProjectState>
         <option name="isInclusion" value="true" />
       </ProjectState>
+    </projectState>
+    <projectState path="$PROJECT_DIR$/../adrrestest">
+      <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/../newtest">
       <ProjectState />
@@ -56,7 +64,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="adrrestest" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -103,7 +116,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_directory_selection": "C:/Devel/java_ptf/Sandbox/src/main/java",
-    "last_opened_file_path": "C:/Devel/java_ptf/newtest/build.gradle",
+    "last_opened_file_path": "C:/Devel/java_ptf/adrrestest/build.gradle",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -140,10 +153,23 @@
       <command value="gradle " />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Easy (1)">
+  <component name="RunManager" selected="Application.Easy (2)">
     <configuration name="Easy (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Easy" />
       <module name="Sandbox.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Easy (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.oft.sandbox.Easy" />
+      <module name="TestMaven" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ru.stqa.oft.sandbox.*" />
@@ -199,30 +225,13 @@
       <option name="JAR_PATH" value="$PROJECT_DIR$/../addressbook-web-tests/gradle/wrapper/gradle-wrapper.jar" />
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="NewModule1.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook2" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook2.GroupCreationTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Easy (2)" />
         <item itemvalue="Application.Easy (1)" />
         <item itemvalue="Application.Easy" />
         <item itemvalue="Application.Point" />
         <item itemvalue="Application.MyFirstProject" />
-        <item itemvalue="TestNG.GroupCreationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -268,5 +277,9 @@
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Merge remote-tracking branch 'java_ptf/main'" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'java_ptf/main'" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
