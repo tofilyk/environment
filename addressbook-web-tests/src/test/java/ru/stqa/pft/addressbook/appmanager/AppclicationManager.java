@@ -1,10 +1,10 @@
-package appmanager;
+package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.chrome.ChromeDriver;
-import model.GroupData;
+import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.time.Duration;
 

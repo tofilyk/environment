@@ -1,4 +1,4 @@
-package tests;
+package ru.stqa.pft.addressbook.tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import model.UserData;
+import ru.stqa.pft.addressbook.model.UserData;
 
 import java.time.Duration;
 
@@ -36,7 +36,7 @@ public class CreateUser {
     public void testCreateUser() throws Exception {
         goToPage();
         createUser();
-        fillUser(new UserData("Ivan", "Ivanov", "vanya", "Elisoft", "91122233555"));
+        fillUser(new UserData("Scarlet", "Ivanov", "vanya", "Elisoft", "91122233555"));
         submitsUser();
         returnHome();
 
