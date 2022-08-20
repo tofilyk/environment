@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b97552a-94af-4528-8481-d481120b1e41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sandbox/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/out/test/classes/ru/stqa/oft/sandbox/SquareTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/out/test/classes/ru/stqa/oft/sandbox/SquareTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/CreateGroup88.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/CreateGroup88.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,18 +224,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/TestAuth.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/TestAuth.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception" />
       </default-breakpoints>
