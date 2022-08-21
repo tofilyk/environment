@@ -32,4 +32,7 @@ public class ContactHelper extends HelperBase {
     }
 
 
+    public void submitGroupModification() {
+        click(By.name("update"));
+    }
 }
