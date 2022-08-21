@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 import ru.stqa.pft.addressbook.model.UserData;
 
+
 public class ContactHelper extends HelperBase {
     public ChromeDriver wd;
 
@@ -36,9 +37,19 @@ public class ContactHelper extends HelperBase {
         click(By.name("update"));
     }
 
+    public void selectUser() {
+        click(By.name("selected[]"));
+    }
+
+    public void initDeleteUser() {
+        click(By.xpath("//input[@value='Delete']"));
+    }
+
     public void returnHomePage() {
         click(By.linkText("home page"));
+
     }
 
 
 }
+

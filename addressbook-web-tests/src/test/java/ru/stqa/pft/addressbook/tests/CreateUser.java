@@ -10,7 +10,7 @@ public class CreateUser extends TestBase {
     public void testCreateUser() throws Exception {
         app.getNavigationHelper().gotoGroupPage();
         app.getContactHelper().initCreateUser();
-        app.getContactHelper().fillUser(new UserData("Dima89", "Petrov", "Elisoft", "9112224455"));
+        app.getContactHelper().fillUser(new UserData("Dima", "Petrov", "Elisoft", "9112224455"));
         app.getContactHelper().submitUserCreation();
         app.getContactHelper().returnHomePage();
 
