@@ -50,10 +50,12 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("home page"));
     }
 
-
     public void AddClientsIntoFirstGroup() {
         click(By.name("add"));
     }
 
+    public void selectAllUsers() {
+        click(By.id("MassCB"));
+    }
 }
 

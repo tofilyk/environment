@@ -2,13 +2,14 @@ package ru.stqa.pft.addressbook.tests;
 
 import org.testng.annotations.Test;
 
-public class DeleteUser extends TestBase {
+public class DeleteAllUsers extends TestBase {
+
 
     @Test
-    public void testUserDelete() throws Exception {
+    public void testDeleteAllUsers() throws Exception {
 
         app.getNavigationHelper().gotoHomePage();
-        app.getContactHelper().selectUser();
+        app.getContactHelper().selectAllUsers();
         app.getContactHelper().initDeleteUser();
         app.getNavigationHelper().isAlertPresent();
         app.getNavigationHelper().gotoHomePage();
