@@ -16,6 +16,10 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("add new"));
     }
 
+    public void submitUserCreation() {
+        click(By.name("submit"));
+    }
+
     public void fillUser(UserData userData) {
         type(By.name("firstname"), userData.getFirstname());
         type(By.name("middlename"), userData.getMiddlename());
@@ -23,8 +27,13 @@ public class ContactHelper extends HelperBase {
         type(By.name("mobile"), userData.getMobile());
     }
 
-    public void saveUser() {
-        click(By.xpath("//div[@id='content']/form/input[21]"));
+
+    public void initUserModification() {
+        click(By.xpath("//table[@id='maintable']/tbody/tr[3]/td[8]/a/img"));
+    }
+
+    public void submitUserModification() {
+        click(By.name("update"));
     }
 
     public void returnHomePage() {
@@ -32,7 +41,4 @@ public class ContactHelper extends HelperBase {
     }
 
 
-    public void submitGroupModification() {
-        click(By.name("update"));
-    }
 }
