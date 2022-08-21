@@ -28,7 +28,8 @@ public class GroupHelper extends HelperBase{
     public void fillUser(UserData userData) {
         type(By.name("firstname"), userData.getFirstname());
         type(By.name("middlename"), userData.getMiddlename());
-        type(By.name("nickname"), userData.getNickname());
+        type(By.name("company"), userData.getCompany());
+        type(By.name("mobile"), userData.getMobile());
     }
 
 

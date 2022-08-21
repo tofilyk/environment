@@ -1,10 +1,11 @@
 package ru.stqa.pft.addressbook.tests;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 
 public class CreateGroup extends TestBase {
-
+    ChromeDriver wd;
 
     @Test
     public void testCreateGroup() throws Exception {
