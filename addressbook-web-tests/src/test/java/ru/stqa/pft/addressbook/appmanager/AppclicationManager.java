@@ -10,16 +10,18 @@ public class AppclicationManager {
     ChromeDriver wd;
     private SessionHelper sessionHelper;
 
-    private  NavigationHelper navigationHelper;
-    private  GroupHelper groupHelper ;
+    private NavigationHelper navigationHelper;
+    private GroupHelper groupHelper;
+    public ContactHelper contactHelper;
 
     public void init() {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         wd.get("http://localhost/addressbook/group.php");
         groupHelper = new GroupHelper(wd);
+        contactHelper = new ContactHelper(wd);
         navigationHelper = new NavigationHelper(wd);
-        sessionHelper= new SessionHelper(wd);
+        sessionHelper = new SessionHelper(wd);
         ChromeDriver wd;
         sessionHelper.login("admin", "secret");
     }
@@ -48,9 +50,12 @@ public class AppclicationManager {
     }
 
 
-
     public GroupHelper getGroupHelper() {
         return groupHelper;
+    }
+
+    public ContactHelper getContactHelper() {
+        return contactHelper;
     }
 
     public NavigationHelper getNavigationHelper() {
