@@ -48,9 +48,12 @@ public class ContactHelper extends HelperBase {
 
     public void returnHomePage() {
         click(By.linkText("home page"));
-
     }
 
+
+    public void AddClientsIntoFirstGroup() {
+        click(By.name("add"));
+    }
 
 }
 
