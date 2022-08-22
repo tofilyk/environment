@@ -1,1 +1,1 @@
-# java_ptf
+# JAVA PROGRAMMING FOR TESTERS
