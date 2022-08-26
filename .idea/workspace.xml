@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9b97552a-94af-4528-8481-d481120b1e41" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/out/test/classes/Balt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/out/production/classes/ru/stqa/oft/sandbox/Equation.class" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/out/production/classes/ru/stqa/oft/sandbox/Equation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/out/test/classes/ru/stqa/oft/sandbox/EquationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/out/test/classes/ru/stqa/oft/sandbox/EquationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/src/main/java/ru/stqa/oft/sandbox/Equation.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/src/main/java/ru/stqa/oft/sandbox/Equation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/src/test/java/ru/stqa/oft/sandbox/EquationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/src/test/java/ru/stqa/oft/sandbox/EquationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
