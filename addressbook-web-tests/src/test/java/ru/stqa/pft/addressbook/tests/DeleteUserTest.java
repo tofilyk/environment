@@ -2,7 +2,7 @@ package ru.stqa.pft.addressbook.tests;
 
 import org.testng.annotations.Test;
 
-public class DeleteUser extends TestBase {
+public class DeleteUserTest extends TestBase {
 
     @Test
     public void testUserDelete() throws Exception {
