@@ -1,13 +1,12 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.WebDriver;
 import ru.stqa.pft.addressbook.model.GroupData;
 
 public class GroupHelper extends HelperBase {
-    public ChromeDriver wd;
 
-    public GroupHelper(ChromeDriver wd) {
+    public GroupHelper(WebDriver wd) {
         super(wd);
     }
 
@@ -43,6 +42,7 @@ public class GroupHelper extends HelperBase {
     public void initGroupModification() {
         click(By.name("edit"));
     }
+
     public void submitGroupModification() {
         click(By.name("update"));
     }
