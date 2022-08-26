@@ -6,7 +6,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class HelperBase {
-    //public WebDriver wd;
+
     protected WebDriver wd;
 
     public HelperBase(WebDriver wd) {
@@ -39,7 +39,7 @@ public class HelperBase {
         }
     }
 
-    protected boolean isElementPresent(By locator) {
+    public boolean isElementPresent(By locator) {
         try {
             wd.findElement(locator);
             return true;

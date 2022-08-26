@@ -11,16 +11,11 @@ public class CreateUser extends TestBase {
         app.getNavigationHelper().gotoGroupPage();
         app.getContactHelper().initCreateUser();
         app.getContactHelper().fillUser(new UserData("Andrey", "Petrov", "Standertoil", "+9112224455",
-                "Group747"),true);
+                "Group777"),true);
         app.getContactHelper().submitUserCreation();
         app.getContactHelper().returnHomePage();
 
-
     }
-
-
-
-
 
 }
 
