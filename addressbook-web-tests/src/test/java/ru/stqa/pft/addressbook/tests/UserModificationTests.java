@@ -11,10 +11,9 @@ public class UserModificationTests extends TestBase {
 
         app.getNavigationHelper().gotoHomePage();
         app.getContactHelper().initUserModification();
-        app.getContactHelper().fillUser(new UserData("Edit", "Edit2", "Edit3", "Edit4"));
+        app.getContactHelper().fillUser(new UserData("Edit", "Edit2", "Edit3", "Edit4",null),false);
         app.getContactHelper().submitUserModification();
         app.getContactHelper().returnHomePage();
-
 
     }
 }

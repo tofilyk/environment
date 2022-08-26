@@ -7,14 +7,15 @@ public class UserData {
     private final String company;
     private final String mobile;
 
+    private String group;
 
-    public UserData(String firstname, String middlename, String company, String mobile) {
+
+    public UserData(String firstname, String middlename, String company, String mobile, String group) {
         this.firstname = firstname;
         this.middlename = middlename;
-
         this.company = company;
         this.mobile = mobile;
-
+        this.group = group;
     }
 
     public String getFirstname() {
@@ -35,4 +36,7 @@ public class UserData {
     }
 
 
+    public String getGroup() {
+        return group;
+    }
 }
