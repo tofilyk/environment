@@ -35,12 +35,21 @@ public class ContactHelper extends HelperBase {
         }
     }
 
+
+
     public void initUserModification() {
 
         click(By.xpath("//img[@alt='Edit']"));
     }
 
+    public void iconUserDetails() {
+
+
+        click(By.xpath("//img[@alt='Details']"));
+    }
+
     public void submitUserModification() {
+
         click(By.name("update"));
     }
 
@@ -84,6 +93,7 @@ public class ContactHelper extends HelperBase {
     public boolean isThereAUser() {
         return isElementPresent(By.name("selected[]"));
     }
+
 
     public void IfNotUserCreateUser() {
         if (!isThereAUser()) { // если нет юзера - создать юзера

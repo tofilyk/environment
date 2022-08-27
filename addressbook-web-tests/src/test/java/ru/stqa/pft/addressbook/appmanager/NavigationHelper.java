@@ -30,6 +30,10 @@ public class NavigationHelper extends HelperBase {
     public void gotoClientsPage() {
         click(By.xpath("//i/a"));
     }
+    public void gotoPageNextBirthdays() {
+
+        click(By.linkText("next birthdays"));
+    }
 
 
 }

@@ -11,6 +11,7 @@ public class CreateUserTest extends TestBase {
         app.getNavigationHelper().gotoGroupPage();
         app.contactHelper.createUserMethod(new UserData("Andrey", "Ivanov",
                 "Elisoft", "+79112223344", "Group777"), false);
+
     }
 
 }
