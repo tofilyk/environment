@@ -28,12 +28,11 @@ public class ContactHelper extends HelperBase {
         type(By.name("company"), userData.getCompany());
         type(By.name("mobile"), userData.getMobile());
 
-        if (creation) {
+        if (creation) { // Если есть группа то выбрать группу, если нет -тест падает
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(userData.getGroup());
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
-
     }
 
     public void initUserModification() {
@@ -64,5 +63,25 @@ public class ContactHelper extends HelperBase {
     public void selectAllUsers() {
         click(By.id("MassCB"));
     }
+
+    public void createUserMethod(UserData user, boolean b) {
+        initCreateUser();
+        fillUser(user, true);
+        submitUserCreation();
+        returnHomePage();
+    }
+
+
+    public boolean isThereAUser() {
+        return isElementPresent(By.name("selected[]"));
+    }
+
+    public void IfNotUserCreateUser() {
+        if (!isThereAUser()) { // если нет юзера - создать юзера
+            createUserMethod(new UserData("Andrey", "Ivanov",
+                    "Elisoft", "+79112223344", "Group777"), false);
+        }
+    }
 }
+
 

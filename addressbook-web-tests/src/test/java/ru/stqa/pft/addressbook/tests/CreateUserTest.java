@@ -7,14 +7,10 @@ public class CreateUserTest extends TestBase {
 
 
     @Test
-    public void testCreateUser1() throws Exception {
+    public void testCreateUser() throws Exception {
         app.getNavigationHelper().gotoGroupPage();
-        app.getContactHelper().initCreateUser();
-        app.getContactHelper().fillUser(new UserData("Andrey", "Petrov", "Standertoil", "+9112224455",
-                "Group777"),true);
-        app.getContactHelper().submitUserCreation();
-        app.getContactHelper().returnHomePage();
-
+       app.contactHelper.createUserMethod(new UserData("Andrey", "Ivanov",
+               "Elisoft", "+79112223344","Group777"),false);
     }
 
 }

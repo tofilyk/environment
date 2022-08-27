@@ -28,7 +28,7 @@ public class NavigationHelper extends HelperBase {
     }
 
     public void gotoClientsPage() {
-        click(By.linkText("group page \"Clients\""));
+        click(By.xpath("//i/a"));
     }
 
 
