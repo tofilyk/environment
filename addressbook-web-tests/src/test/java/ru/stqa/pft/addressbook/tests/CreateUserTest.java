@@ -10,7 +10,7 @@ public class CreateUserTest extends TestBase {
     public void testCreateUser() throws Exception {
         app.getNavigationHelper().gotoGroupPage();
         app.contactHelper.createUserMethod(new UserData("Andrey", "Ivanov",
-                "Elisoft", "+79112223344", "Group777"), false);
+                "Elisoft", "+79112223344", "Group777"));
 
     }
 

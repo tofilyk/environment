@@ -73,7 +73,7 @@ public class ContactHelper extends HelperBase {
         click(By.id("MassCB"));
     }
 
-    public void createUserMethod(UserData user, boolean b) {
+    public void createUserMethod(UserData user) {
         initCreateUser();
         fillUser(user, true);
         submitUserCreation();
@@ -83,7 +83,7 @@ public class ContactHelper extends HelperBase {
     public void setBirthday() {
 
         click(By.name("bday"));
-        new Select(wd.findElement(By.name("bday"))).selectByVisibleText("11");
+        new Select(wd.findElement(By.name("bday"))).selectByVisibleText("12");
         click(By.name("bmonth"));
         new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText("February");
         click(By.name("byear"));
@@ -98,7 +98,7 @@ public class ContactHelper extends HelperBase {
     public void IfNotUserCreateUser() {
         if (!isThereAUser()) { // если нет юзера - создать юзера
             createUserMethod(new UserData("Andrey", "Ivanov",
-                    "Elisoft", "+79112223344", "Group777"), false);
+                    "Elisoft", "+79112223344", "Group777"));
         }
     }
 }
