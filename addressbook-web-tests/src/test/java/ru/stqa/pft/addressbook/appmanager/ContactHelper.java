@@ -71,6 +71,15 @@ public class ContactHelper extends HelperBase {
         returnHomePage();
     }
 
+    public void setBirthday() {
+
+        click(By.name("bday"));
+        new Select(wd.findElement(By.name("bday"))).selectByVisibleText("11");
+        click(By.name("bmonth"));
+        new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText("February");
+        click(By.name("byear"));
+        wd.findElement(By.name("byear")).sendKeys("2001");
+    }
 
     public boolean isThereAUser() {
         return isElementPresent(By.name("selected[]"));

@@ -48,10 +48,16 @@ public class GroupHelper extends HelperBase {
     }
 
     public void createGroupMethod(GroupData group) {
-       initGroupCreation();
+        initGroupCreation();
         fillGroupForm(group);
         submitGroupCreation();
         returnToGroupPage();
+    }
+
+    public void ifNotGroupCreateGroup() {
+        if (!isThereAGrpup()) {
+            createGroupMethod(new GroupData("Group777", null, null));
+        }
     }
 
     public boolean isThereAGrpup() {
