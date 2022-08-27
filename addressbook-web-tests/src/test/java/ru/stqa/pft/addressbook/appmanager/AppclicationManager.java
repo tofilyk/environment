@@ -1,7 +1,6 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -35,7 +34,7 @@ public class AppclicationManager {
         }
 
 
-        wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+        wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
         wd.get("http://localhost/addressbook/group.php");
         groupHelper = new GroupHelper(wd);
         contactHelper = new ContactHelper(wd);
@@ -59,14 +58,7 @@ public class AppclicationManager {
         wd.quit();
     }
 
-    public boolean isElementPresent(By by) {
-        try {
-            wd.findElement(by);
-            return true;
-        } catch (NoSuchElementException e) {
-            return false;
-        }
-    }
+
 
 
     public GroupHelper getGroupHelper() {

@@ -95,6 +95,7 @@ public class ContactHelper extends HelperBase {
     }
 
 
+
     public void IfNotUserCreateUser() {
         if (!isThereAUser()) { // если нет юзера - создать юзера
             createUserMethod(new UserData("Andrey", "Ivanov",

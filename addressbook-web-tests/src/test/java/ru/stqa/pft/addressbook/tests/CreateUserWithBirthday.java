@@ -1,13 +1,15 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.UserData;
 
 public class CreateUserWithBirthday extends TestBase {
-    WebDriver wd;
+
 
     @Test
+    // Создаем аккаунт с датой рождения. Делаем переход на страницу Next birthdays
+    // Переходим в карточку аккаунта и проверяем наличие кнопок print и modifiy
     public void CreateUserWithBirthday() throws Exception {
         app.getNavigationHelper().gotoHomePage();
         app.contactHelper.initCreateUser();
@@ -15,6 +17,11 @@ public class CreateUserWithBirthday extends TestBase {
         app.getContactHelper().setBirthday();
         app.getContactHelper().submitUserCreation();
         app.getNavigationHelper().gotoPageNextBirthdays();
+        app.getContactHelper().iconUserDetails();
+        app.contactHelper.checkElement(By.name("print"));
+        app.contactHelper.checkElement(By.name("modifiy"));
+
+
 
 
 
