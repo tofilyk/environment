@@ -9,6 +9,7 @@ import ru.stqa.pft.addressbook.model.UserData;
 
 public class ContactHelper extends HelperBase {
 
+     NavigationHelper nh=new NavigationHelper(wd) ;
 
     public ContactHelper(WebDriver wd) {
         super(wd);
@@ -80,6 +81,13 @@ public class ContactHelper extends HelperBase {
         returnHomePage();
     }
 
+    public void deleteAllUsers() {
+        nh.gotoHomePage();
+        selectAllUsers();
+        initDeleteUser();
+        nh.isAlertPresent();
+        nh.gotoHomePage();
+    }
     public void setBirthday() {
 
         click(By.name("bday"));

@@ -10,11 +10,7 @@ public class DeleteAllUsersTest extends TestBase {
 
         app.getNavigationHelper().gotoHomePage();
         app.getContactHelper().IfNotUserCreateUser();
-        app.getContactHelper().selectAllUsers();
-        app.getContactHelper().initDeleteUser();
-        app.getNavigationHelper().isAlertPresent();
-        app.getNavigationHelper().gotoHomePage();
-
+        app.getContactHelper().deleteAllUsers();
 
     }
 }
