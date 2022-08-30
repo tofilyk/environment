@@ -30,13 +30,10 @@ public class ContactHelper extends HelperBase {
         type(By.name("company"), userData.getCompany());
         type(By.name("mobile"), userData.getMobile());
 
-
-        if (isElementPresent(By.name("new_group"))) {
-
+        if (creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(userData.getGroup());
 
         } else {
-
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
 
