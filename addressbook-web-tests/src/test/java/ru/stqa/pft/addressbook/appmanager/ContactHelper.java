@@ -9,7 +9,8 @@ import ru.stqa.pft.addressbook.model.UserData;
 
 public class ContactHelper extends HelperBase {
 
-     NavigationHelper nh=new NavigationHelper(wd) ;
+    NavigationHelper navigationHelper = new NavigationHelper(wd);
+    GroupHelper groupHelper = new GroupHelper(wd);
 
     public ContactHelper(WebDriver wd) {
         super(wd);
@@ -29,21 +30,24 @@ public class ContactHelper extends HelperBase {
         type(By.name("company"), userData.getCompany());
         type(By.name("mobile"), userData.getMobile());
 
-        if (creation) { // Если есть группа то выбрать группу, если нет -тест падает
+
+        if (isElementPresent(By.name("new_group"))) {
+
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(userData.getGroup());
+
         } else {
+
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
+
     }
-
-
 
     public void initUserModification() {
 
         click(By.xpath("//img[@alt='Edit']"));
     }
 
-    public void iconUserDetails() {
+    public void goToUserProfile() {
 
 
         click(By.xpath("//img[@alt='Details']"));
@@ -74,7 +78,7 @@ public class ContactHelper extends HelperBase {
         click(By.id("MassCB"));
     }
 
-    public void createUserMethod(UserData user) {
+    public void createUser(UserData user) {
         initCreateUser();
         fillUser(user, true);
         submitUserCreation();
@@ -82,12 +86,13 @@ public class ContactHelper extends HelperBase {
     }
 
     public void deleteAllUsers() {
-        nh.gotoHomePage();
+        navigationHelper.gotoHomePage();
         selectAllUsers();
         initDeleteUser();
-        nh.isAlertPresent();
-        nh.gotoHomePage();
+        navigationHelper.confirmAlertForDeleteUsers();
+        navigationHelper.gotoHomePage();
     }
+
     public void setBirthday() {
 
         click(By.name("bday"));
@@ -103,11 +108,10 @@ public class ContactHelper extends HelperBase {
     }
 
 
-
-    public void IfNotUserCreateUser() {
+    public void ifNotUserCreateUser() {
         if (!isThereAUser()) { // если нет юзера - создать юзера
-            createUserMethod(new UserData("Andrey", "Ivanov",
-                    "Elisoft", "+79112223344", "Group777"));
+            createUser(new UserData("Andrey", "Ivanov",
+                    "Elisoft", "+79112223344", "Group2"));
         }
     }
 }

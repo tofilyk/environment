@@ -40,7 +40,6 @@ public class AppclicationManager {
         contactHelper = new ContactHelper(wd);
         navigationHelper = new NavigationHelper(wd);
         sessionHelper = new SessionHelper(wd);
-        ChromeDriver wd;
         sessionHelper.login("admin", "secret");
     }
 

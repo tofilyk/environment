@@ -9,7 +9,7 @@ public class DeleteAllUsersTest extends TestBase {
     public void testDeleteAllUsers() throws Exception {
 
         app.getNavigationHelper().gotoHomePage();
-        app.getContactHelper().IfNotUserCreateUser();
+        app.getContactHelper().ifNotUserCreateUser();
         app.getContactHelper().deleteAllUsers();
 
     }

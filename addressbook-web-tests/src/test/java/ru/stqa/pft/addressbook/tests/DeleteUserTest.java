@@ -8,10 +8,10 @@ public class DeleteUserTest extends TestBase {
     public void testUserDelete() throws Exception {
 
         app.getNavigationHelper().gotoHomePage();
-        app.getContactHelper().IfNotUserCreateUser();
+        app.getContactHelper().ifNotUserCreateUser();
         app.getContactHelper().selectUser();
         app.getContactHelper().initDeleteUser();
-        app.getNavigationHelper().isAlertPresent();
+        app.getNavigationHelper().confirmAlertForDeleteUsers();
         app.getNavigationHelper().gotoHomePage();
 
 

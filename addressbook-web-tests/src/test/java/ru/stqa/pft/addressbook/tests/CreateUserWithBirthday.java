@@ -18,8 +18,8 @@ public class CreateUserWithBirthday extends TestBase {
         app.getContactHelper().setBirthday();
         app.getContactHelper().submitUserCreation();
         app.getNavigationHelper().gotoPageNextBirthdays();
-        app.getContactHelper().iconUserDetails();
-        app.contactHelper.checkElement(By.name("print"));
+        app.getContactHelper().goToUserProfile();
+        app.contactHelper.checkElement(By.name("prin"));
         app.contactHelper.checkElement(By.name("modifiy"));
 
 

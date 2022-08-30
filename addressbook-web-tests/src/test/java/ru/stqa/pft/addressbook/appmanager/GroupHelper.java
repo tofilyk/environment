@@ -47,7 +47,7 @@ public class GroupHelper extends HelperBase {
         click(By.name("update"));
     }
 
-    public void createGroupMethod(GroupData group) {
+    public void createGroup(GroupData group) {
         initGroupCreation();
         fillGroupForm(group);
         submitGroupCreation();
@@ -55,12 +55,12 @@ public class GroupHelper extends HelperBase {
     }
 
     public void ifNotGroupCreateGroup() {
-        if (!isThereAGrpup()) {
-            createGroupMethod(new GroupData("Group777", null, null));
+        if (!isThereAGroup()) {
+            createGroup(new GroupData("Group777", null, null));
         }
     }
 
-    public boolean isThereAGrpup() {
+    public boolean isThereAGroup() {
         return isElementPresent(By.name("selected[]"));
     }
 }

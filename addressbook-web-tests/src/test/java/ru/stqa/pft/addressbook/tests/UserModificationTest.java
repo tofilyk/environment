@@ -10,7 +10,7 @@ public class UserModificationTest extends TestBase {
     public void UserModificationTest() throws Exception {
 
         app.getNavigationHelper().gotoHomePage();
-        app.getContactHelper().IfNotUserCreateUser();
+        app.getContactHelper().ifNotUserCreateUser();
         app.getContactHelper().initUserModification();
         app.getContactHelper().fillUser(new UserData("Edit", "Edit2", "Edit3",
                 "Edit4", null), false);

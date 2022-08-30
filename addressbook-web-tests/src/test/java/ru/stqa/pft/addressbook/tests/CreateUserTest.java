@@ -9,9 +9,9 @@ public class CreateUserTest extends TestBase {
     @Test
     public void testCreateUser() throws Exception {
         app.getNavigationHelper().gotoGroupPage();
-        app.contactHelper.createUserMethod(new UserData("Andrey", "Ivanov",
-                "Elisoft", "+79112223344", "Group777"));
-
+         app.getGroupHelper().ifNotGroupCreateGroup();
+        app.contactHelper.createUser(new UserData("Andrey", "Ivanov",
+                "Elisoft", "+79112223344", null));
     }
 
 }

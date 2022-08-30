@@ -37,9 +37,18 @@ public class HelperBase {
             return false;
         }
     }
+    public boolean confirmAlertForDeleteUsers() {
+        try {
+            wd.switchTo().alert().accept();
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
     public boolean checkElement(By locator) {
         wd.findElement(locator);
-        return false;
+        return true;
+
     };
 
     public boolean isElementPresent(By locator) {
