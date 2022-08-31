@@ -9,7 +9,7 @@ public class CreateUserTest extends TestBase {
     @Test
     public void testCreateUser() throws Exception {
         app.getNavigationHelper().gotoGroupPage();
-         app.getGroupHelper().ifNotGroupCreateGroup();
+        app.getGroupHelper().ifNotGroupCreateGroup();
         app.contactHelper.createUser(new UserData("Andrey", "Ivanov",
                 "Elisoft", "+79112223344", null));
     }

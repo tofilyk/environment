@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -24,6 +25,16 @@ public class ContactHelper extends HelperBase {
         click(By.name("submit"));
     }
 
+
+    public boolean checkExistsFirstGroup() {
+        try {
+            new Select(wd.findElement(By.name("new_group"))).selectByIndex(1);
+            return true;
+        } catch (NoSuchElementException ex) {
+            return false;
+        }
+    }
+
     public void fillUser(UserData userData, boolean creation) {
         type(By.name("firstname"), userData.getFirstname());
         type(By.name("middlename"), userData.getMiddlename());
@@ -31,7 +42,8 @@ public class ContactHelper extends HelperBase {
         type(By.name("mobile"), userData.getMobile());
 
         if (creation) {
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(userData.getGroup());
+
+            if (checkExistsFirstGroup()) new Select(wd.findElement(By.name("new_group"))).selectByIndex(1);
 
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
