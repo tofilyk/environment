@@ -120,7 +120,7 @@ public class ContactHelper extends HelperBase {
     public void ifNotUserCreateUser() {
         if (!isThereAUser()) { // если нет юзера - создать юзера
             createUser(new UserData("Andrey", "Ivanov",
-                    "Elisoft", "+79112223344", "Group2"));
+                    "Elisoft", "+79112223344", null));
         }
     }
 }
