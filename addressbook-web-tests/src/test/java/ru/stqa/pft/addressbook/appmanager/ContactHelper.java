@@ -41,7 +41,7 @@ public class ContactHelper extends HelperBase {
 
     public void fillUser(UserData userData, boolean creation) {
         type(By.name("firstname"), userData.getFirstname());
-        type(By.name("middlename"), userData.getMiddlename());
+        type(By.name("lastname"), userData.getLastname());
         type(By.name("company"), userData.getCompany());
         type(By.name("mobile"), userData.getMobile());
 
