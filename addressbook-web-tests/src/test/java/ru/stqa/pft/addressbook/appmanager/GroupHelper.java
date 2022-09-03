@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import ru.stqa.pft.addressbook.model.GroupData;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,9 +58,9 @@ public class GroupHelper extends HelperBase {
         returnToGroupPage();
     }
 
-    public void ifNotGroupCreateGroup() {
+    public void ifGroupsEmptyGoCreateGroup() {
         if (!isThereAGroup()) {
-            createGroup(new GroupData("Group777", null, null));
+            createGroup(new GroupData("Group1", null, null));
         }
     }
 
