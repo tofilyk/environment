@@ -7,7 +7,7 @@ public class UserData {
     private int id;
     private final String firstname;
     private final String lastname;
-    private final String company;
+    private final String email;
     private final String mobile;
     private String group;
 
@@ -15,21 +15,21 @@ public class UserData {
         this.id = id;
     }
 
-    public UserData(int id, String firstname, String lastname, String company, String mobile, String group) {
+    public UserData(int id, String firstname, String lastname, String email, String mobile, String group) {
         this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
-        this.company = company;
+        this.email = email;
         this.mobile = mobile;
         this.group = group;
     }
 
 
-    public UserData(String firstname, String lastname, String company, String mobile, String group) {
+    public UserData(String firstname, String lastname, String email, String mobile, String group) {
         this.id = Integer.MAX_VALUE;
         this.firstname = firstname;
         this.lastname = lastname;
-        this.company = company;
+        this.email = email;
         this.mobile = mobile;
         this.group = group;
     }
@@ -46,8 +46,8 @@ public class UserData {
         return lastname;
     }
 
-    public String getCompany() {
-        return company;
+    public String getEmail() {
+        return email;
     }
 
     public String getMobile() {

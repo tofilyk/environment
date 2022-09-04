@@ -22,10 +22,18 @@ public class RandomData {
         return randLastname;
     }
 
-    List<String> mobile = Arrays.asList("+79225554488", "+79652154783", "+79114785526", "+79263254815");
+    List<String> mobile = Arrays.asList("+79225554488", "+79652154783", "+79114785526", "+79263254815","+79251247895");
     String randMobile = mobile.get(rand.nextInt(mobile.size()));
 
     public String randomMobile() {
         return randMobile;
+    }
+
+
+    List<String> email = Arrays.asList("larry@gmail.com", "ross@gmail.com", "dixon@gmail.com", "parker@gmail.com","thompson@gmail.com");
+    String randEmail = email.get(rand.nextInt(mobile.size()));
+
+    public String randomEmail() {
+        return randEmail;
     }
 }

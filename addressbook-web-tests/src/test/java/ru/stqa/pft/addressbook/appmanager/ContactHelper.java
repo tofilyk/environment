@@ -42,7 +42,7 @@ public class ContactHelper extends HelperBase {
     public void fillUser(UserData userData, boolean creation) {
         type(By.name("firstname"), userData.getFirstname());
         type(By.name("lastname"), userData.getLastname());
-        type(By.name("company"), userData.getCompany());
+        type(By.name("email"), userData.getEmail());
         type(By.name("mobile"), userData.getMobile());
 
         if (creation) {
@@ -123,8 +123,8 @@ public class ContactHelper extends HelperBase {
 
     public void ifNotUserCreateUser() {
         if (!isThereAUser()) { // если нет юзера - создать юзера
-            createUser(new UserData("Andrey", "Ivanov",
-                    "Elisoft", "+79112223344", null));
+            createUser(new UserData("David", "Parker",
+                    "david@gmail.com", "+79112223344", null));
         }
     }
 
