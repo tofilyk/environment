@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.UserData;
 
+import java.util.Comparator;
 import java.util.List;
 
 public class CreateUserTest extends TestBase {
@@ -21,9 +22,23 @@ public class CreateUserTest extends TestBase {
         System.out.println("ArrayList after = " + after);
         Assert.assertEquals(after.size(), before.size() + 1);
 
+
+        Comparator<? super UserData> byId=  (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
+        int max=after.stream().max(byId).get().getId();
+        userData.setId(max);
+
+
+
+        //before.add(userData);
+       // Comparator<? super UserData> byId=(g1, g2) -> Integer.compare(g1.getId(), g2.getId());
+       // before.sort(byId);
+        //after.sort(byId);
+       // Assert.assertEquals(before,after);
     }
 
-}
+    }
+
+
 
 
 

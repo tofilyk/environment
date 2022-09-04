@@ -25,7 +25,9 @@ public class UserModificationTest extends TestBase {
         System.out.println("ArrayList after = " + after);
         Assert.assertEquals(before.size(),after.size());
 
+        //before.remove()
+        //Assert.assertEquals(new HashSet<Object>(before),new HashSet<Object>(after));
+
+
     }
-
-
 }

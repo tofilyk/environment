@@ -10,6 +10,14 @@ public class UserData {
     private final String company;
     private final String mobile;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private String group;
 
     public UserData(int id, String firstname, String lastname, String company, String mobile, String group) {
@@ -55,7 +63,8 @@ public class UserData {
     @Override
     public String toString() {
         return "UserData{" +
-                "firstname='" + firstname + '\'' +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
                 '}';
     }
 
@@ -66,11 +75,14 @@ public class UserData {
 
         UserData userData = (UserData) o;
 
+        if (id != userData.id) return false;
         return Objects.equals(firstname, userData.firstname);
     }
 
     @Override
     public int hashCode() {
-        return firstname != null ? firstname.hashCode() : 0;
+        int result = id;
+        result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
+        return result;
     }
 }

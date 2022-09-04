@@ -22,6 +22,8 @@ public class GroupModificationTest extends TestBase {
         app.getGroupHelper().submitGroupModification();
         app.getGroupHelper().returnToGroupPage();
         List<GroupData> after = app.getGroupHelper().getGroupList();
+        System.out.println("ArrayList before = " + before);
+        System.out.println("ArrayList after = " + after);
         Assert.assertEquals(after.size(), before.size());
 
         before.remove(before.size()-1);

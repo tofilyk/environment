@@ -17,8 +17,8 @@ public class CreateGroupTest extends TestBase {
         GroupData group = new GroupData("Group1", null, null);
         app.getGroupHelper().createGroup(group);
         List<GroupData> after = app.getGroupHelper().getGroupList();
-        System.out.println("Massive Group before = " + before);
-        System.out.println("Massive Group after = " + after);
+        System.out.println("ArrayList before = " + before);
+        System.out.println("ArrayList after = " + after);
         Assert.assertEquals(after.size(), before.size() + 1);
 
 
@@ -28,6 +28,8 @@ public class CreateGroupTest extends TestBase {
         before.sort(byId);
         after.sort(byId);
         Assert.assertEquals(before,after);
+
+
     }
 
 }
