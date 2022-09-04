@@ -17,8 +17,8 @@ public class CreateGroupTest extends TestBase {
         GroupData group = new GroupData("Group1", null, null);
         app.getGroupHelper().createGroup(group);
         List<GroupData> after = app.getGroupHelper().getGroupList();
-        System.out.println("ArrayList before = " + before);
-        System.out.println("ArrayList after = " + after);
+        System.out.println("ArrayList before = " + before.size());
+        System.out.println("ArrayList after = " + after.size());
         Assert.assertEquals(after.size(), before.size() + 1);
 
 

@@ -16,6 +16,7 @@ public class AppclicationManager {
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
     public ContactHelper contactHelper;
+
     private String browser;
 
     public AppclicationManager(String browser) {
