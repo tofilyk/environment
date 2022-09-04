@@ -15,7 +15,7 @@ public class CreateUserTest extends TestBase {
         app.getGroupHelper().ifGroupsEmptyGoCreateGroup();
         app.getNavigationHelper().gotoHomePage();
         List<UserData> before = app.getContactHelper().getUserList();
-        UserData userData = new UserData("Max", "Ivanov", "test@ya.ru", "+79289996655", null);
+        UserData userData = new UserData("Edward", "McBride", "edward@gmail.com", "+79289996655", null);
         app.contactHelper.createUser(userData);
         List<UserData> after = app.getContactHelper().getUserList();
         System.out.println("ArrayList before = " + before.size());

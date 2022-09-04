@@ -16,9 +16,9 @@ public class UserModificationTest extends TestBase {
         app.getNavigationHelper().gotoHomePage();
         app.getContactHelper().ifNotUserCreateUser();
         List<UserData> before = app.getContactHelper().getUserList();
-        app.getContactHelper().initUserModification();
-        UserData userData= new UserData("Edit", "Edit2", "Edit3",
-                "Edit4", null);
+        app.getContactHelper().initUserModification(before.size()-1);
+        UserData userData= new UserData(before.get(before.size()-1).getId(),"newFirstname", "newLastname", "newEmail",
+                "newMobile", null);
         app.getContactHelper().fillUser(userData, false);
         app.getContactHelper().submitUserModification();
         app.getContactHelper().returnHomePage();
@@ -27,7 +27,7 @@ public class UserModificationTest extends TestBase {
         System.out.println("ArrayList after = " + after);
         Assert.assertEquals(before.size(),after.size());
 
-        before.remove(before.size() - 1);
+       before.remove(before.size() - 1);
         before.add(userData);
         Comparator<? super UserData> byId = Comparator.comparingInt(UserData::getId);
         before.sort(byId);

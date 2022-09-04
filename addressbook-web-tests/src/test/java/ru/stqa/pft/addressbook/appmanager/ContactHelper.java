@@ -55,9 +55,9 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public void initUserModification() {
+    public void initUserModification(int index) {
 
-        click(By.xpath("//img[@alt='Edit']"));
+       wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();;
     }
 
     public void goToUserProfile() {
@@ -122,7 +122,7 @@ public class ContactHelper extends HelperBase {
 
 
     public void ifNotUserCreateUser() {
-        if (!isThereAUser()) { // если нет юзера - создать юзера
+        if (!isThereAUser()) {
             createUser(new UserData("David", "Parker",
                     "david@gmail.com", "+79112223344", null));
         }
