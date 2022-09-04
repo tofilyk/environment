@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.UserData;
 
+import java.util.Comparator;
 import java.util.List;
 
 public class UserModificationTest extends TestBase {
@@ -16,8 +17,9 @@ public class UserModificationTest extends TestBase {
         app.getContactHelper().ifNotUserCreateUser();
         List<UserData> before = app.getContactHelper().getUserList();
         app.getContactHelper().initUserModification();
-        app.getContactHelper().fillUser(new UserData("Edit", "Edit2", "Edit3",
-                "Edit4", null), false);
+        UserData userData= new UserData("Edit", "Edit2", "Edit3",
+                "Edit4", null);
+        app.getContactHelper().fillUser(userData, false);
         app.getContactHelper().submitUserModification();
         app.getContactHelper().returnHomePage();
         List<UserData> after = app.getContactHelper().getUserList();
@@ -25,8 +27,12 @@ public class UserModificationTest extends TestBase {
         System.out.println("ArrayList after = " + after);
         Assert.assertEquals(before.size(),after.size());
 
-        //before.remove()
-        //Assert.assertEquals(new HashSet<Object>(before),new HashSet<Object>(after));
+        before.remove(before.size() - 1);
+        before.add(userData);
+        Comparator<? super UserData> byId = Comparator.comparingInt(UserData::getId);
+        before.sort(byId);
+        after.sort(byId);
+        Assert.assertEquals(before, after);
 
 
     }

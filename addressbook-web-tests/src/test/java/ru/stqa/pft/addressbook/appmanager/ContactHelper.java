@@ -72,7 +72,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void selectUser(int index) {
-        wd.findElements(By.name("selected[]")).get(index).click();;
+        wd.findElements(By.name("selected[]")).get(index).click();
     }
 
     public void initDeleteUser() {
