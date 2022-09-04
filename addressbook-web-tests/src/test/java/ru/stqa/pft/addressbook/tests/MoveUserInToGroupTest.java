@@ -13,7 +13,7 @@ public class MoveUserInToGroupTest extends TestBase{
         app.getNavigationHelper().gotoHomePage();
         List<UserData> before = app.getContactHelper().getUserList();
         app.getContactHelper().ifNotUserCreateUser();
-        app.getContactHelper().selectUser();
+        app.getContactHelper().selectUser(before.size() - 1);
         app.getContactHelper().AddClientsIntoFirstGroup();
         app.getNavigationHelper().gotoClientsPage();
         List<UserData> after = app.getContactHelper().getUserList();

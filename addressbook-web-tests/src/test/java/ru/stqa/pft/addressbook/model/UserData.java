@@ -5,6 +5,34 @@ import java.util.Objects;
 public class UserData {
 
     private int id;
+
+    @Override
+    public String toString() {
+        return "UserData{" +
+                "id=" + id +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        UserData userData = (UserData) o;
+
+        if (!Objects.equals(firstname, userData.firstname)) return false;
+        return Objects.equals(lastname, userData.lastname);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = firstname != null ? firstname.hashCode() : 0;
+        result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
+        return result;
+    }
+
     private final String firstname;
     private final String lastname;
     private final String company;
@@ -60,29 +88,4 @@ public class UserData {
     }
 
 
-    @Override
-    public String toString() {
-        return "UserData{" +
-                "id=" + id +
-                ", firstname='" + firstname + '\'' +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        UserData userData = (UserData) o;
-
-        if (id != userData.id) return false;
-        return Objects.equals(firstname, userData.firstname);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
-        return result;
-    }
 }
