@@ -15,7 +15,7 @@ import java.util.List;
 public class ContactHelper extends HelperBase {
 
     NavigationHelper navigationHelper = new NavigationHelper(wd);
-   // GroupHelper groupHelper = new GroupHelper(wd);
+    // GroupHelper groupHelper = new GroupHelper(wd);
 
     public ContactHelper(WebDriver wd) {
         super(wd);
@@ -64,6 +64,7 @@ public class ContactHelper extends HelperBase {
     public void initUserModificationById(int id) {
 
         wd.findElement(By.cssSelector("[src$=\"icons/pencil.png\"]")).click();
+
 
     }
 
@@ -144,14 +145,12 @@ public class ContactHelper extends HelperBase {
     }
 
 
-
     public Users all() {
         Users users = new Users();
         List<WebElement> elements = wd.findElements(By.name("entry"));
 
         for (WebElement element : elements) {
             List<WebElement> cells = element.findElements(By.tagName("td"));
-            // System.out.println("fistname=" + cells.get(2).getText() + ",lastname=" + cells.get(1).getText() + ",mobile=" + cells.get(4).getText());
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
             users.add(new UserData().withId(id).withFirstname(cells.get(2).getText()).withLastname(cells.get(1).getText()));
         }
