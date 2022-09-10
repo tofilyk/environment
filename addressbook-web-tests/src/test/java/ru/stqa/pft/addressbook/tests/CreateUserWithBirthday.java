@@ -7,7 +7,7 @@ import ru.stqa.pft.addressbook.model.UserData;
 public class CreateUserWithBirthday extends TestBase {
 
 
-    @Test
+    @Test(enabled = false)
     // Чистим базу аккаунтов. Создаем аккаунт с датой рождения. Делаем переход на страницу Next birthdays
     // Переходим в карточку аккаунта и проверяем наличие кнопок print и modifiy
     public void CreateUserWithBirthday() throws Exception {

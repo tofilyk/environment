@@ -10,7 +10,7 @@ import java.util.List;
 public class CreateUserTest extends TestBase {
 
 
-    @Test
+    @Test(enabled = false)
     public void testCreateUser() throws Exception {
         app.getGroupHelper().ifGroupsEmptyGoCreateGroup();
         app.getNavigationHelper().gotoHomePage();

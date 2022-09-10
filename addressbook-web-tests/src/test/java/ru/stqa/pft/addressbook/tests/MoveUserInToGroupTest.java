@@ -8,7 +8,7 @@ import java.util.List;
 
 public class MoveUserInToGroupTest extends TestBase{
 
-    @Test
+    @Test(enabled = false)
     public void MoveUserInToGroupTest() throws Exception {
         app.getNavigationHelper().gotoHomePage();
         List<UserData> before = app.getContactHelper().getUserList();

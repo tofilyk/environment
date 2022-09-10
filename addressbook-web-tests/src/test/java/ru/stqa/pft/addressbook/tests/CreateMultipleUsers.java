@@ -10,7 +10,7 @@ import java.util.List;
 public class CreateMultipleUsers extends TestBase {
 
 
-    @Test()
+    @Test(enabled = false)
     public void CreateMultipleUsers() throws Exception {
 
 
@@ -18,7 +18,7 @@ public class CreateMultipleUsers extends TestBase {
         app.getNavigationHelper().gotoHomePage();
         List<UserData> before = app.getContactHelper().getUserList();
 
-        int amountOfIterations = 10;
+        int amountOfIterations = 120;
         for (int i = 0; i < amountOfIterations; i++) {
 
             RandomData randomData = new RandomData();

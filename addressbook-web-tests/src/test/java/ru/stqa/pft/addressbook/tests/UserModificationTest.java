@@ -10,7 +10,7 @@ import java.util.List;
 public class UserModificationTest extends TestBase {
 
 
-    @Test
+    @Test(enabled = false)
     public void UserModificationTest() throws Exception {
 
         app.getNavigationHelper().gotoHomePage();
@@ -23,8 +23,8 @@ public class UserModificationTest extends TestBase {
         app.getContactHelper().submitUserModification();
         app.getContactHelper().returnHomePage();
         List<UserData> after = app.getContactHelper().getUserList();
-        System.out.println("ArrayList before = " + before);
-        System.out.println("ArrayList after = " + after);
+        System.out.println("ArrayList before = " + before.size());
+        System.out.println("ArrayList after = " + after.size());
         Assert.assertEquals(before.size(),after.size());
 
        before.remove(before.size() - 1);
