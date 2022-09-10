@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.UserData;
 
@@ -8,18 +9,19 @@ import java.util.Comparator;
 import java.util.List;
 
 public class CreateUserTest extends TestBase {
-
+    @BeforeMethod
+    public void ensurePreconditions() {
+        app.Group().ifGroupsEmptyGoCreateGroup();
+        app.goTo().HomePage();
+    }
 
     @Test//(enabled = false)
     public void testCreateUser() throws Exception {
-        //  app.Group().ifGroupsEmptyGoCreateGroup();
-        app.goTo().gotoHomePage();
-        List<UserData> before = app.getContactHelper().getUserList();
+
+        List<UserData> before = app.contact().list();
         UserData userData = new UserData("Edward", "McBride", "edward@gmail.com", "+79289996655", null);
-        app.contactHelper.createUser(userData);
-        List<UserData> after = app.getContactHelper().getUserList();
-        System.out.println("ArrayList before = " + before.size());
-        System.out.println("ArrayList after = " + after.size());
+        app.contactHelper.create(userData);
+        List<UserData> after = app.contact().list();
         Assert.assertEquals(after.size(), before.size() + 1);
 
         before.add(userData);

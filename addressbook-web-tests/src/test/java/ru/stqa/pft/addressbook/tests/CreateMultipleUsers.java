@@ -15,8 +15,8 @@ public class CreateMultipleUsers extends TestBase {
 
 
         app.Group().ifGroupsEmptyGoCreateGroup();
-        app.goTo().gotoHomePage();
-        List<UserData> before = app.getContactHelper().getUserList();
+        app.goTo().HomePage();
+        List<UserData> before = app.contact().list();
 
         int amountOfIterations = 120;
         for (int i = 0; i < amountOfIterations; i++) {
@@ -24,10 +24,10 @@ public class CreateMultipleUsers extends TestBase {
             RandomData randomData = new RandomData();
 
             UserData userData = new UserData(randomData.randomFirstname(), randomData.randomLastname(), randomData.randomEmail(), randomData.randomMobile(), null);
-            app.contactHelper.createUser(userData);
+            app.contactHelper.create(userData);
         }
 
-        List<UserData> after = app.getContactHelper().getUserList();
+        List<UserData> after = app.contact().list();
         System.out.println("ArrayList before = " + before.size());
         System.out.println("ArrayList after = " + after.size());
         Assert.assertEquals(after.size(), before.size() + amountOfIterations);

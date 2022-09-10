@@ -20,7 +20,7 @@ public class NavigationHelper extends HelperBase {
         }
     }
 
-    public void gotoHomePage() {
+    public void HomePage() {
          if (isElementPresent(By.id("maintable"))) {  return;    }
         click(By.linkText("home"));
     }
@@ -28,10 +28,7 @@ public class NavigationHelper extends HelperBase {
     public void gotoClientsPage() {
         click(By.xpath("//i/a"));
     }
-    public void gotoPageNextBirthdays() {
 
-        click(By.linkText("next birthdays"));
-    }
 
 
 }

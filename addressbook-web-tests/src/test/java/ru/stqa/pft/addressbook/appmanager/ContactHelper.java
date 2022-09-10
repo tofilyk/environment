@@ -91,19 +91,30 @@ public class ContactHelper extends HelperBase {
         click(By.id("MassCB"));
     }
 
-    public void createUser(UserData user) {
+    public void create(UserData user) {
         initCreateUser();
         fillUser(user, true);
         submitUserCreation();
         returnHomePage();
     }
-
+    public void delete(int index) {
+        selectUser(index);
+        initDeleteUser();
+        confirmAlertForDeleteUsers();
+        navigationHelper.HomePage();
+    }
+    public void modify(int index, UserData userData) {
+        initUserModification(index);
+        fillUser(userData, false);
+        submitUserModification();
+        returnHomePage();
+    }
     public void deleteAllUsers() {
-        navigationHelper.gotoHomePage();
+        navigationHelper.HomePage();
         selectAllUsers();
         initDeleteUser();
         navigationHelper.confirmAlertForDeleteUsers();
-        navigationHelper.gotoHomePage();
+        navigationHelper.HomePage();
     }
 
     public void setBirthday() {
@@ -122,8 +133,8 @@ public class ContactHelper extends HelperBase {
 
 
     public void ifNotUserCreateUser() {
-        if (!isThereAUser()) {
-            createUser(new UserData("David", "Parker",
+        if (list().size()==0) {
+            create(new UserData("David", "Parker",
                     "david@gmail.com", "+79112223344", null));
         }
     }
@@ -132,7 +143,7 @@ public class ContactHelper extends HelperBase {
         return wd.findElements(By.name("selected[]")).size();
     }
 
-    public List<UserData> getUserList() {
+    public List<UserData> list() {
         List<UserData> users = new ArrayList<UserData>();
         List<WebElement> elements = wd.findElements(By.name("entry"));
 

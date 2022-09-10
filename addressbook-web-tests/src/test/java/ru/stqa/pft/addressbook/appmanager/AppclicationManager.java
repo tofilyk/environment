@@ -59,13 +59,13 @@ public class AppclicationManager {
     }
 
 
-
-
     public GroupHelper Group() {
         return groupHelper;
     }
 
-    public ContactHelper getContactHelper() {
+    //public ContactHelper contact() {return contact(); }
+
+    public ContactHelper contact() {
         return contactHelper;
     }
 
