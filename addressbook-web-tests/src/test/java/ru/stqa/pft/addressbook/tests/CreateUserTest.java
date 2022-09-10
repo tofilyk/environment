@@ -1,12 +1,12 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.UserData;
+import ru.stqa.pft.addressbook.model.Users;
 
-import java.util.Comparator;
-import java.util.List;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class CreateUserTest extends TestBase {
     @BeforeMethod
@@ -18,17 +18,13 @@ public class CreateUserTest extends TestBase {
     @Test//(enabled = false)
     public void testCreateUser() throws Exception {
 
-        List<UserData> before = app.contact().list();
-        UserData userData = new UserData().withFirstname("Kostya").withGroup(null);
-        app.contactHelper.create(userData);
-        List<UserData> after = app.contact().list();
-        Assert.assertEquals(after.size(), before.size() + 1);
-
-        before.add(userData);
-        Comparator<? super UserData> byId = Comparator.comparingInt(UserData::getId);
-        before.sort(byId);
-        after.sort(byId);
-        Assert.assertEquals(before, after);
+        Users before = app.contact().all();
+        UserData user = new UserData().withFirstname("Kostya").withLastname("Jons").withGroup(null);
+        app.contact().create(user);
+        Users after = app.contact().all();
+        assertThat(after.size(), equalTo(before.size() + 1));
+        assertThat(after, equalTo(
+               before.withAdded(user.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
 
 
     }

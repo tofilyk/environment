@@ -4,8 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.RandomData;
 import ru.stqa.pft.addressbook.model.UserData;
-
-import java.util.List;
+import ru.stqa.pft.addressbook.model.Users;
 
 public class CreateMultipleUsers extends TestBase {
 
@@ -16,18 +15,19 @@ public class CreateMultipleUsers extends TestBase {
 
         app.Group().ifGroupsEmptyGoCreateGroup();
         app.goTo().HomePage();
-        List<UserData> before = app.contact().list();
+        Users before = app.contact().all();
 
-        int amountOfIterations = 120;
+        int amountOfIterations = 8;
         for (int i = 0; i < amountOfIterations; i++) {
 
-            RandomData randomData = new RandomData();
+            RandomData rd = new RandomData();
 
-            UserData userData = new UserData().withFirstname(randomData.randomFirstname()).withGroup(null);
+            UserData userData = new UserData().withFirstname(rd.randomFirstname()).withLastname(rd.randomLastname())
+                    .withMobile(rd.randomMobile()).withEmail(rd.randomEmail()).withGroup(null);
             app.contactHelper.create(userData);
         }
 
-        List<UserData> after = app.contact().list();
+        Users after = app.contact().all();
         System.out.println("ArrayList before = " + before.size());
         System.out.println("ArrayList after = " + after.size());
         Assert.assertEquals(after.size(), before.size() + amountOfIterations);

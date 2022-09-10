@@ -7,15 +7,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.UserData;
+import ru.stqa.pft.addressbook.model.Users;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
 public class ContactHelper extends HelperBase {
 
     NavigationHelper navigationHelper = new NavigationHelper(wd);
-    GroupHelper groupHelper = new GroupHelper(wd);
+   // GroupHelper groupHelper = new GroupHelper(wd);
 
     public ContactHelper(WebDriver wd) {
         super(wd);
@@ -58,13 +58,13 @@ public class ContactHelper extends HelperBase {
     public void initUserModification(int index) {
 
         wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
-        ;
+
     }
 
-    public void goToUserProfile() {
+    public void initUserModificationById(int id) {
 
+        wd.findElement(By.cssSelector("[src$=\"icons/pencil.png\"]")).click();
 
-        click(By.xpath("//img[@alt='Details']"));
     }
 
     public void submitUserModification() {
@@ -74,6 +74,10 @@ public class ContactHelper extends HelperBase {
 
     public void selectUser(int index) {
         wd.findElements(By.name("selected[]")).get(index).click();
+    }
+
+    public void selectUserById(int id) {
+        wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
     }
 
     public void initDeleteUser() {
@@ -99,16 +103,18 @@ public class ContactHelper extends HelperBase {
         returnHomePage();
     }
 
-    public void delete(int index) {
-        selectUser(index);
+
+    public void delete(UserData user) {
+        selectUserById(user.getId());
         initDeleteUser();
         confirmAlertForDeleteUsers();
         navigationHelper.HomePage();
+
     }
 
-    public void modify(int index, UserData userData) {
-        initUserModification(index);
-        fillUser(userData, false);
+    public void modify(UserData user) {
+        initUserModificationById(user.getId());
+        fillUser(user, false);
         submitUserModification();
         returnHomePage();
     }
@@ -121,15 +127,6 @@ public class ContactHelper extends HelperBase {
         navigationHelper.HomePage();
     }
 
-    public void setBirthday() {
-
-        click(By.name("bday"));
-        new Select(wd.findElement(By.name("bday"))).selectByVisibleText("12");
-        click(By.name("bmonth"));
-        new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText("February");
-        click(By.name("byear"));
-        wd.findElement(By.name("byear")).sendKeys("2001");
-    }
 
     public boolean isThereAUser() {
         return isElementPresent(By.name("selected[]"));
@@ -137,7 +134,7 @@ public class ContactHelper extends HelperBase {
 
 
     public void ifNotUserCreateUser() {
-        if (list().size() == 0) {
+        if (all().size() == 0) {
             create(new UserData().withFirstname("Kostya").withGroup(null));
         }
     }
@@ -146,18 +143,22 @@ public class ContactHelper extends HelperBase {
         return wd.findElements(By.name("selected[]")).size();
     }
 
-    public List<UserData> list() {
-        List<UserData> users = new ArrayList<UserData>();
+
+
+    public Users all() {
+        Users users = new Users();
         List<WebElement> elements = wd.findElements(By.name("entry"));
 
         for (WebElement element : elements) {
             List<WebElement> cells = element.findElements(By.tagName("td"));
-            //System.out.println("fistname="+ cells.get(1).getText()+ ",lastname="+ cells.get(2).getText()+",mobile="+cells.get(5).getText());
+            // System.out.println("fistname=" + cells.get(2).getText() + ",lastname=" + cells.get(1).getText() + ",mobile=" + cells.get(4).getText());
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            users.add(new UserData().withId(id).withFirstname(cells.get(2).getText()).withLastname(cells.get(2).getText()));
+            users.add(new UserData().withId(id).withFirstname(cells.get(2).getText()).withLastname(cells.get(1).getText()));
         }
         return users;
     }
+
+
 }
 
 

@@ -63,7 +63,6 @@ public class AppclicationManager {
         return groupHelper;
     }
 
-    //public ContactHelper contact() {return contact(); }
 
     public ContactHelper contact() {
         return contactHelper;

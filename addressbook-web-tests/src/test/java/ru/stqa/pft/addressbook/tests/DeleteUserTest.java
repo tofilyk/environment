@@ -1,12 +1,12 @@
 package ru.stqa.pft.addressbook.tests;
 
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.MatcherAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.UserData;
-
-import java.util.Comparator;
-import java.util.List;
+import ru.stqa.pft.addressbook.model.Users;
 
 public class DeleteUserTest extends TestBase {
     @BeforeMethod
@@ -18,17 +18,13 @@ public class DeleteUserTest extends TestBase {
     @Test//(enabled = false)
     public void testUserDelete() throws Exception {
 
-        List<UserData> before = app.contact().list();
-        int index= before.size()-1;
-        app.contact().delete(index);
-        List<UserData> after = app.contact().list();
-        Assert.assertEquals(index, after.size());
+        Users before = app.contact().all();
+        UserData deletedUser = before.iterator().next();
+        app.contact().delete(deletedUser);
+        Users after = app.contact().all();
+        Assert.assertEquals(after.size(), after.size());
+        MatcherAssert.assertThat(after, CoreMatchers.equalTo(before.withOut(deletedUser)));
 
-        before.remove(index);
-        Comparator<? super UserData> byId = Comparator.comparingInt(UserData::getId);
-        before.sort(byId);
-        after.sort(byId);
-        Assert.assertEquals(before, after);
 
     }
 

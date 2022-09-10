@@ -1,12 +1,13 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.UserData;
+import ru.stqa.pft.addressbook.model.Users;
 
-import java.util.Comparator;
-import java.util.List;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.Assert.assertEquals;
 
 public class UserModificationTest extends TestBase {
 
@@ -18,22 +19,14 @@ public class UserModificationTest extends TestBase {
 
     @Test//(enabled = false)
     public void UserModificationTest() throws Exception {
-
-
-        List<UserData> before = app.contact().list();
-        int index = before.size() - 1;
-        UserData userData = new UserData().withId(before.get(index).getId()).withFirstname("Max").withEmail(null);
-        app.contact().modify(index, userData);
-        List<UserData> after = app.contact().list();
-        Assert.assertEquals(before.size(), after.size());
-
-
-        before.remove(index);
-        before.add(userData);
-        Comparator<? super UserData> byId = Comparator.comparingInt(UserData::getId);
-        before.sort(byId);
-        after.sort(byId);
-        Assert.assertEquals(before, after);
+        Users before = app.contact().all();
+        UserData modifiedUser = before.iterator().next();
+        UserData userData = new UserData()
+                .withId(modifiedUser.getId()).withFirstname("Max").withLastname("Bored").withGroup(null);
+        app.contact().modify(userData);
+        Users after = app.contact().all();
+        assertEquals(before.size(), after.size());
+        assertThat(after, equalTo(before.withOut(modifiedUser).withAdded(userData)));
 
 
     }

@@ -3,9 +3,7 @@ package ru.stqa.pft.addressbook.tests;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import ru.stqa.pft.addressbook.model.UserData;
-
-import java.util.List;
+import ru.stqa.pft.addressbook.model.Users;
 
 public class DeleteAllUsersTest extends TestBase {
     @BeforeMethod
@@ -17,10 +15,10 @@ public class DeleteAllUsersTest extends TestBase {
     @Test//(enabled = false)
     public void testDeleteAllUsers() throws Exception {
 
-        List<UserData> before = app.contact().list();
+        Users before = app.contact().all();
         app.contact().deleteAllUsers();
-        List<UserData> after = app.contact().list();
-        Assert.assertEquals(before.size() - before.size(), after.size());
+        Users after = app.contact().all();
+        Assert.assertEquals( after.size(),before.size() -1);
 
     }
 }
