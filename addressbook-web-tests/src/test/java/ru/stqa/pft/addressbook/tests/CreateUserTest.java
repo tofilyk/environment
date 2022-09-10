@@ -12,7 +12,7 @@ public class CreateUserTest extends TestBase {
 
     @Test//(enabled = false)
     public void testCreateUser() throws Exception {
-        app.Group().ifGroupsEmptyGoCreateGroup();
+        //  app.Group().ifGroupsEmptyGoCreateGroup();
         app.goTo().gotoHomePage();
         List<UserData> before = app.getContactHelper().getUserList();
         UserData userData = new UserData("Edward", "McBride", "edward@gmail.com", "+79289996655", null);
