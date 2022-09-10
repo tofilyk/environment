@@ -19,7 +19,7 @@ public class CreateUserTest extends TestBase {
     public void testCreateUser() throws Exception {
 
         List<UserData> before = app.contact().list();
-        UserData userData = new UserData("Edward", "McBride", "edward@gmail.com", "+79289996655", null);
+        UserData userData = new UserData().withFirstname("Kostya").withGroup(null);
         app.contactHelper.create(userData);
         List<UserData> after = app.contact().list();
         Assert.assertEquals(after.size(), before.size() + 1);

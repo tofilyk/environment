@@ -4,35 +4,13 @@ import java.util.Objects;
 
 public class UserData {
 
-    private int id;
-    private final String firstname;
-    private final String lastname;
-    private final String email;
-    private final String mobile;
+    private int id=Integer.MAX_VALUE;;
+    private  String firstname;
+    private  String lastname;
+    private  String email;
+    private  String mobile;
     private String group;
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public UserData(int id, String firstname, String lastname, String email, String mobile, String group) {
-        this.id = id;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.email = email;
-        this.mobile = mobile;
-        this.group = group;
-    }
-
-
-    public UserData(String firstname, String lastname, String email, String mobile, String group) {
-        this.id = Integer.MAX_VALUE;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.email = email;
-        this.mobile = mobile;
-        this.group = group;
-    }
 
     public int getId() {
         return id;
@@ -56,6 +34,35 @@ public class UserData {
 
     public String getGroup() {
         return group;
+    }
+    public UserData withId(int id) {
+
+        this.id = id;
+        return this;
+    }
+    public UserData withFirstname(String firstname) {
+        this.firstname = firstname;
+        return this;
+    }
+
+    public UserData withLastname(String lastname) {
+        this.lastname = lastname;
+        return this;
+    }
+
+    public UserData withEmail(String email) {
+        this.email = email;
+        return this;
+    }
+
+    public UserData withMobile(String mobile) {
+        this.mobile = mobile;
+        return this;
+    }
+
+    public UserData withGroup(String group) {
+        this.group = group;
+        return this;
     }
 
     @Override

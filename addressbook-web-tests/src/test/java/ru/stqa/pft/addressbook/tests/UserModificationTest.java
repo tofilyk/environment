@@ -22,8 +22,7 @@ public class UserModificationTest extends TestBase {
 
         List<UserData> before = app.contact().list();
         int index = before.size() - 1;
-        UserData userData = new UserData(before.get(before.size() - 1).getId(), "newFirstname", "newLastname", "newEmail",
-                "newMobile", null);
+        UserData userData = new UserData().withId(before.get(index).getId()).withFirstname("Max").withEmail(null);
         app.contact().modify(index, userData);
         List<UserData> after = app.contact().list();
         Assert.assertEquals(before.size(), after.size());

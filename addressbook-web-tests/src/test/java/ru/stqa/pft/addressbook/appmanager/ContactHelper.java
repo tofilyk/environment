@@ -57,7 +57,8 @@ public class ContactHelper extends HelperBase {
 
     public void initUserModification(int index) {
 
-       wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();;
+        wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
+        ;
     }
 
     public void goToUserProfile() {
@@ -97,18 +98,21 @@ public class ContactHelper extends HelperBase {
         submitUserCreation();
         returnHomePage();
     }
+
     public void delete(int index) {
         selectUser(index);
         initDeleteUser();
         confirmAlertForDeleteUsers();
         navigationHelper.HomePage();
     }
+
     public void modify(int index, UserData userData) {
         initUserModification(index);
         fillUser(userData, false);
         submitUserModification();
         returnHomePage();
     }
+
     public void deleteAllUsers() {
         navigationHelper.HomePage();
         selectAllUsers();
@@ -133,9 +137,8 @@ public class ContactHelper extends HelperBase {
 
 
     public void ifNotUserCreateUser() {
-        if (list().size()==0) {
-            create(new UserData("David", "Parker",
-                    "david@gmail.com", "+79112223344", null));
+        if (list().size() == 0) {
+            create(new UserData().withFirstname("Kostya").withGroup(null));
         }
     }
 
@@ -151,8 +154,7 @@ public class ContactHelper extends HelperBase {
             List<WebElement> cells = element.findElements(By.tagName("td"));
             //System.out.println("fistname="+ cells.get(1).getText()+ ",lastname="+ cells.get(2).getText()+",mobile="+cells.get(5).getText());
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            UserData user = new UserData(id, cells.get(2).getText(), cells.get(1).getText(), null, null, null);
-            users.add(user);
+            users.add(new UserData().withId(id).withFirstname(cells.get(2).getText()).withLastname(cells.get(2).getText()));
         }
         return users;
     }
