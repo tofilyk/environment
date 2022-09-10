@@ -11,30 +11,29 @@ import java.util.List;
 public class GroupDeleteTest extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
-        app.getNavigationHelper().gotoGroupPage();
-        app.getGroupHelper().ifGroupsEmptyGoCreateGroup();
+        app.goTo().GroupPage();
+        app.Group().ifGroupsEmptyGoCreateGroup();
     }
 
     @Test
     public void testGroupDelete() throws Exception {
 
-        List<GroupData> before = app.getGroupHelper().getGroupList();
-        app.getGroupHelper().selectGroup(before.size() - 1);
-        app.getGroupHelper().deleteSelectedGroups();
-        app.getGroupHelper().returnToGroupPage();
-        List<GroupData> after = app.getGroupHelper().getGroupList();
-        System.out.println("ArrayList before = " + before.size());
-        System.out.println("ArrayList after = " + after.size());
-        Assert.assertEquals(after.size(), before.size() - 1);
+        List<GroupData> before = app.Group().list();
+        int index = before.size() - 1;
+        app.Group().delete(index);
+        List<GroupData> after = app.Group().list();
+        Assert.assertEquals(after.size(), index);
 
-        before.remove(before.size()-1);
-        Comparator<? super GroupData> byId= Comparator.comparingInt(GroupData::getId);
+        before.remove(index);
+        Comparator<? super GroupData> byId = Comparator.comparingInt(GroupData::getId);
         before.sort(byId);
         after.sort(byId);
-        Assert.assertEquals(before,after);
+        Assert.assertEquals(before, after);
 
 
     }
+
+
 
 
 }

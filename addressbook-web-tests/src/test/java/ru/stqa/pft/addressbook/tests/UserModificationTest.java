@@ -13,7 +13,7 @@ public class UserModificationTest extends TestBase {
     @Test(enabled = false)
     public void UserModificationTest() throws Exception {
 
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().gotoHomePage();
         app.getContactHelper().ifNotUserCreateUser();
         List<UserData> before = app.getContactHelper().getUserList();
         app.getContactHelper().initUserModification(before.size()-1);

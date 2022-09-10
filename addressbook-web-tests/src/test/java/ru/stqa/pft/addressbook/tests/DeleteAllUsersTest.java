@@ -12,7 +12,7 @@ public class DeleteAllUsersTest extends TestBase {
     @Test(enabled = false)
     public void testDeleteAllUsers() throws Exception {
 
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().gotoHomePage();
         app.getContactHelper().ifNotUserCreateUser();
         List<UserData> before = app.getContactHelper().getUserList();
         app.getContactHelper().deleteAllUsers();

@@ -14,8 +14,8 @@ public class CreateMultipleUsers extends TestBase {
     public void CreateMultipleUsers() throws Exception {
 
 
-        app.getGroupHelper().ifGroupsEmptyGoCreateGroup();
-        app.getNavigationHelper().gotoHomePage();
+        app.Group().ifGroupsEmptyGoCreateGroup();
+        app.goTo().gotoHomePage();
         List<UserData> before = app.getContactHelper().getUserList();
 
         int amountOfIterations = 120;

@@ -61,7 +61,7 @@ public class AppclicationManager {
 
 
 
-    public GroupHelper getGroupHelper() {
+    public GroupHelper Group() {
         return groupHelper;
     }
 
@@ -69,7 +69,7 @@ public class AppclicationManager {
         return contactHelper;
     }
 
-    public NavigationHelper getNavigationHelper() {
+    public NavigationHelper goTo() {
         return navigationHelper;
     }
 }

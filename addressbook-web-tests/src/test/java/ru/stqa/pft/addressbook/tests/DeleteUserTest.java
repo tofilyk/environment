@@ -12,13 +12,13 @@ public class DeleteUserTest extends TestBase {
     @Test(enabled = false)
     public void testUserDelete() throws Exception {
 
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().gotoHomePage();
         app.getContactHelper().ifNotUserCreateUser();
         List<UserData> before = app.getContactHelper().getUserList();
         app.getContactHelper().selectUser(before.size() - 1);
         app.getContactHelper().initDeleteUser();
-        app.getNavigationHelper().confirmAlertForDeleteUsers();
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().confirmAlertForDeleteUsers();
+        app.goTo().gotoHomePage();
         List<UserData> after = app.getContactHelper().getUserList();
         System.out.println("ArrayList before = " + before.size());
         System.out.println("ArrayList after = " + after.size());

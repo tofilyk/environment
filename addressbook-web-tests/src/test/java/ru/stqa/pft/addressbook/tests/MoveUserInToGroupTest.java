@@ -10,12 +10,12 @@ public class MoveUserInToGroupTest extends TestBase{
 
     @Test(enabled = false)
     public void MoveUserInToGroupTest() throws Exception {
-        app.getNavigationHelper().gotoHomePage();
+        app.goTo().gotoHomePage();
         List<UserData> before = app.getContactHelper().getUserList();
         app.getContactHelper().ifNotUserCreateUser();
         app.getContactHelper().selectUser(before.size() - 1);
         app.getContactHelper().AddClientsIntoFirstGroup();
-        app.getNavigationHelper().gotoClientsPage();
+        app.goTo().gotoClientsPage();
         List<UserData> after = app.getContactHelper().getUserList();
         System.out.println("ArrayList before = " + before);
         System.out.println("ArrayList after = " + after);

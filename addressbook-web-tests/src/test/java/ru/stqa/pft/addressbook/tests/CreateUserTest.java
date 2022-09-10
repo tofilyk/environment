@@ -12,8 +12,8 @@ public class CreateUserTest extends TestBase {
 
     @Test(enabled = false)
     public void testCreateUser() throws Exception {
-        app.getGroupHelper().ifGroupsEmptyGoCreateGroup();
-        app.getNavigationHelper().gotoHomePage();
+        app.Group().ifGroupsEmptyGoCreateGroup();
+        app.goTo().gotoHomePage();
         List<UserData> before = app.getContactHelper().getUserList();
         UserData userData = new UserData("Edward", "McBride", "edward@gmail.com", "+79289996655", null);
         app.contactHelper.createUser(userData);

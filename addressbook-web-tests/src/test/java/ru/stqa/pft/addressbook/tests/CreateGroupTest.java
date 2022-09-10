@@ -12,21 +12,18 @@ public class CreateGroupTest extends TestBase {
 
     @Test
     public void testCreateGroup() throws Exception {
-        app.getNavigationHelper().gotoGroupPage();
-        List<GroupData> before = app.getGroupHelper().getGroupList();
+        app.goTo().GroupPage();
+        List<GroupData> before = app.Group().list();
         GroupData group = new GroupData("Group1", null, null);
-        app.getGroupHelper().createGroup(group);
-        List<GroupData> after = app.getGroupHelper().getGroupList();
-        System.out.println("ArrayList before = " + before.size());
-        System.out.println("ArrayList after = " + after.size());
+        app.Group().create(group);
+        List<GroupData> after = app.Group().list();
         Assert.assertEquals(after.size(), before.size() + 1);
 
-
         before.add(group);
-        Comparator<? super GroupData> byId= Comparator.comparingInt(GroupData::getId);
+        Comparator<? super GroupData> byId = Comparator.comparingInt(GroupData::getId);
         before.sort(byId);
         after.sort(byId);
-        Assert.assertEquals(before,after);
+        Assert.assertEquals(before, after);
 
 
     }

@@ -18,7 +18,7 @@ public class CreateUserWithBirthday extends TestBase {
                 "Elisoft", "+79112223344", null), true);
         app.getContactHelper().setBirthday();
         app.getContactHelper().submitUserCreation();
-        app.getNavigationHelper().gotoPageNextBirthdays();
+        app.goTo().gotoPageNextBirthdays();
         app.getContactHelper().goToUserProfile();
         app.contactHelper.checkElement(By.name("print"));
         app.contactHelper.checkElement(By.name("modifiy"));
