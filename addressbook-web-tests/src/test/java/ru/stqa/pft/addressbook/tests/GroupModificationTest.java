@@ -11,13 +11,11 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class GroupModificationTest extends TestBase {
 
-
     @BeforeMethod
     public void ensurePreconditions() {
         app.goTo().GroupPage();
         app.Group().ifGroupsEmptyGoCreateGroup();
     }
-
     @Test//(enabled = false)
 
     public void testGroupModification() {
@@ -29,9 +27,5 @@ public class GroupModificationTest extends TestBase {
         Groups after = app.Group().all();
         Assert.assertEquals(after.size(), before.size());
         assertThat(after, equalTo(before.withOut(modifiedGroup).withAdded(group)));
-
-
     }
-
-
 }

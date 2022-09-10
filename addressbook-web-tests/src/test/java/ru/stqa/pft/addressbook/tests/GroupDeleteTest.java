@@ -15,7 +15,6 @@ public class GroupDeleteTest extends TestBase {
         app.goTo().GroupPage();
         app.Group().ifGroupsEmptyGoCreateGroup();
     }
-
     @Test//(enabled = false)
     public void testGroupDelete() throws Exception {
 
@@ -25,10 +24,6 @@ public class GroupDeleteTest extends TestBase {
         Groups after = app.Group().all();
         assertEquals(after.size(), before.size() - 1);
         assertThat(after, equalTo(before.withOut(deletedGroup)));
-
-
     }
-
-
 }
 
