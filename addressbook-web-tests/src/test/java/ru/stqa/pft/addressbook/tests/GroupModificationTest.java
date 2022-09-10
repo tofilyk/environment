@@ -17,13 +17,13 @@ public class GroupModificationTest extends TestBase {
         app.Group().ifGroupsEmptyGoCreateGroup();
     }
 
-    @Test(enabled = false)
+    @Test//(enabled = false)
 
     public void testGroupModification() {
 
         List<GroupData> before = app.Group().list();
         int index = before.size() - 1;
-        GroupData group = new GroupData(before.get(index).getId(), "replaceGroupName1", null, null);
+        GroupData group = new GroupData().withId(before.get(index).getId()).withName("Group1").withHeader("header1").withFooter("footer1");
         app.Group().modify(index, group);
         List<GroupData> after = app.Group().list();
         Assert.assertEquals(after.size(), before.size());

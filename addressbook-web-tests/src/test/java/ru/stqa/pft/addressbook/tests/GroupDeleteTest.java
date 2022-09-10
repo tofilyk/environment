@@ -15,7 +15,7 @@ public class GroupDeleteTest extends TestBase {
         app.Group().ifGroupsEmptyGoCreateGroup();
     }
 
-    @Test
+    @Test//(enabled = false)
     public void testGroupDelete() throws Exception {
 
         List<GroupData> before = app.Group().list();

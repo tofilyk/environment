@@ -10,7 +10,7 @@ import java.util.List;
 public class UserModificationTest extends TestBase {
 
 
-    @Test(enabled = false)
+    @Test//(enabled = false)
     public void UserModificationTest() throws Exception {
 
         app.goTo().gotoHomePage();

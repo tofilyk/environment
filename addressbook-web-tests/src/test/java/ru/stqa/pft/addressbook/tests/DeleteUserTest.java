@@ -9,7 +9,7 @@ import java.util.List;
 
 public class DeleteUserTest extends TestBase {
 
-    @Test(enabled = false)
+    @Test//(enabled = false)
     public void testUserDelete() throws Exception {
 
         app.goTo().gotoHomePage();
