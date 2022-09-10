@@ -55,17 +55,9 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public void initUserModification(int index) {
-
-        wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
-
-    }
-
     public void initUserModificationById(int id) {
 
-        wd.findElement(By.cssSelector("[src$=\"icons/pencil.png\"]")).click();
-
-
+        wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))).click();
     }
 
     public void submitUserModification() {
@@ -73,9 +65,7 @@ public class ContactHelper extends HelperBase {
         click(By.name("update"));
     }
 
-    public void selectUser(int index) {
-        wd.findElements(By.name("selected[]")).get(index).click();
-    }
+    // public void selectUser(int index) { wd.findElements(By.name("selected[]")).get(index).click(); }
 
     public void selectUserById(int id) {
         wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
@@ -87,10 +77,6 @@ public class ContactHelper extends HelperBase {
 
     public void returnHomePage() {
         click(By.linkText("home page"));
-    }
-
-    public void AddClientsIntoFirstGroup() {
-        click(By.name("add"));
     }
 
     public void selectAllUsers() {
@@ -128,11 +114,7 @@ public class ContactHelper extends HelperBase {
         navigationHelper.HomePage();
     }
 
-
-    public boolean isThereAUser() {
-        return isElementPresent(By.name("selected[]"));
-    }
-
+    // public boolean isThereAUser() { return isElementPresent(By.name("selected[]"));}
 
     public void ifNotUserCreateUser() {
         if (all().size() == 0) {
@@ -140,10 +122,7 @@ public class ContactHelper extends HelperBase {
         }
     }
 
-    public int getUserCount() {
-        return wd.findElements(By.name("selected[]")).size();
-    }
-
+     public int count() { return wd.findElements(By.name("selected[]")).size();}
 
     public Users all() {
         Users users = new Users();
@@ -152,7 +131,10 @@ public class ContactHelper extends HelperBase {
         for (WebElement element : elements) {
             List<WebElement> cells = element.findElements(By.tagName("td"));
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-            users.add(new UserData().withId(id).withFirstname(cells.get(2).getText()).withLastname(cells.get(1).getText()));
+            String firstname = cells.get(2).getText();
+            String lastname = cells.get(1).getText();
+            String mobile = cells.get(5).getText();
+            users.add(new UserData().withId(id).withFirstname(firstname).withLastname(lastname));
         }
         return users;
     }

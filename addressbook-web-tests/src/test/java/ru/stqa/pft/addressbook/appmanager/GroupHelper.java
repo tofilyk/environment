@@ -18,7 +18,6 @@ public class GroupHelper extends HelperBase {
         click(By.linkText("group page"));
     }
 
-
     public void submitGroupCreation() {
         click(By.name("submit"));
     }
@@ -29,7 +28,6 @@ public class GroupHelper extends HelperBase {
         type(By.name("group_footer"), groupData.getFooter());
     }
 
-
     public void initGroupCreation() {
         click(By.name("new"));
     }
@@ -38,7 +36,6 @@ public class GroupHelper extends HelperBase {
     public void deleteSelectedGroups() {
         click(By.name("delete"));
     }
-
 
     public void selectGroupById(int id) {
         wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
@@ -85,16 +82,13 @@ public class GroupHelper extends HelperBase {
         }
     }
 
-    public boolean isThereAGroup() {
-        return isElementPresent(By.name("selected[]"));
-    }
+   // public boolean isThereAGroup() { return isElementPresent(By.name("selected[]")); }
 
     public int count() {
         return wd.findElements(By.name("selected[]")).size();
     }
 
     private Groups groupCashe = null;
-
 
     public Groups all() {
         if (groupCashe != null) {

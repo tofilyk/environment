@@ -14,7 +14,7 @@ public class CreateGroupTest extends TestBase {
         Groups before = app.Group().all();
         GroupData group = new GroupData().withName("Group1");
         app.Group().create(group);
-        assertThat(app.Group().count(), equalTo(before.size()));
+        assertThat(app.Group().count(), equalTo(before.size()+1));
         Groups after = app.Group().all();
         assertThat(after, equalTo(
                 before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
