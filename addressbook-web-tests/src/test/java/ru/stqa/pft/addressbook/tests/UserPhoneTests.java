@@ -16,9 +16,9 @@ public class UserPhoneTests extends TestBase {
         UserData user = app.contact().all().iterator().next();
         UserData userInfoFromEditForm = app.contact().infoFromEditForm(user);
 
-        assertThat(user.getHomePhone(), equalTo(userInfoFromEditForm.getHomePhone()));
-        assertThat(user.getMobilePhone(), equalTo(userInfoFromEditForm.getMobilePhone()));
-        assertThat(user.getWorkPhone(), equalTo(userInfoFromEditForm.getWorkPhone()));
+        assertThat(user.getHomePhone(), equalTo(cleaned(userInfoFromEditForm.getHomePhone())));
+        assertThat(user.getMobilePhone(), equalTo(cleaned(userInfoFromEditForm.getMobilePhone())));
+        assertThat(user.getWorkPhone(), equalTo(cleaned(userInfoFromEditForm.getWorkPhone())));
 
     }
 

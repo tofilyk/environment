@@ -147,12 +147,12 @@ public class ContactHelper extends HelperBase {
     public UserData infoFromEditForm(UserData user) {
         initUserModificationById(user.getId());
         String firstname = wd.findElement(By.name("firstname")).getAttribute("value");
-        String lasttname = wd.findElement(By.name("lasttname")).getAttribute("value");
+        String lastname = wd.findElement(By.name("lastname")).getAttribute("value");
         String home = wd.findElement(By.name("home")).getAttribute("value");
         String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
         String work = wd.findElement(By.name("work")).getAttribute("value");
         wd.navigate().back();
-        return new UserData().withId(user.getId()).withFirstname(firstname).withLastname(lasttname)
+        return new UserData().withId(user.getId()).withFirstname(firstname).withLastname(lastname)
                 .withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work);
 
 
