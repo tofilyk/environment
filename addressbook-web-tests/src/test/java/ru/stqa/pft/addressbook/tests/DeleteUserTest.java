@@ -12,17 +12,17 @@ public class DeleteUserTest extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
         app.goTo().HomePage();
-        app.contact().ifNotUserCreateUser();
+        app.user().ifNotUserCreateUser();
     }
 
     @Test//(enabled = false)
     public void testUserDelete() throws Exception {
 
-        Users before = app.contact().all();
+        Users before = app.user().all();
         UserData deletedUser = before.iterator().next();
-        app.contact().delete(deletedUser);
-        Users after = app.contact().all();
-        assertThat(app.contact().count(), equalTo(before.size() - 1));
+        app.user().delete(deletedUser);
+        Users after = app.user().all();
+        assertThat(app.user().count(), equalTo(before.size() - 1));
         assertThat(after, equalTo(before.withOut(deletedUser)));
 
     }

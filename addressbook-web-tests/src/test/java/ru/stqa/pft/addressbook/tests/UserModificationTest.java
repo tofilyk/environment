@@ -13,18 +13,18 @@ public class UserModificationTest extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
         app.goTo().HomePage();
-        app.contact().ifNotUserCreateUser();
+        app.user().ifNotUserCreateUser();
     }
 
     @Test//(enabled = false)
     public void UserModificationTest() throws Exception {
-        Users before = app.contact().all();
+        Users before = app.user().all();
         UserData modifiedUser = before.iterator().next();
         UserData user = new UserData()
                 .withId(modifiedUser.getId()).withFirstname("Max").withLastname("Bored").withGroup(null);
-        app.contact().modify(user);
-        assertThat(app.contact().count(), equalTo(before.size()));
-        Users after = app.contact().all();
+        app.user().modify(user);
+        assertThat(app.user().count(), equalTo(before.size()));
+        Users after = app.user().all();
         assertThat(after, equalTo(before.withOut(modifiedUser).withAdded(user)));
     }
 }

@@ -12,12 +12,12 @@ import ru.stqa.pft.addressbook.model.Users;
 import java.util.List;
 
 
-public class ContactHelper extends HelperBase {
+public class UserHelper extends HelperBase {
 
     NavigationHelper navigationHelper = new NavigationHelper(wd);
     // GroupHelper groupHelper = new GroupHelper(wd);
 
-    public ContactHelper(WebDriver wd) {
+    public UserHelper(WebDriver wd) {
         super(wd);
     }
 
@@ -119,7 +119,8 @@ public class ContactHelper extends HelperBase {
 
     public void ifNotUserCreateUser() {
         if (all().size() == 0) {
-            create(new UserData().withFirstname("Kostya").withGroup(null));
+            create(new UserData().withFirstname("Kostya").withLastname("Jons").withHomePhone("111")
+                    .withMobilePhone("222").withWorkPhone("333").withGroup(null));
         }
     }
 
@@ -136,9 +137,9 @@ public class ContactHelper extends HelperBase {
             int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
             String firstname = cells.get(2).getText();
             String lastname = cells.get(1).getText();
-            String[] phones = cells.get(5).getText().split("\n");
+            String allPhones = cells.get(5).getText();
             users.add(new UserData().withId(id).withFirstname(firstname).withLastname(lastname)
-                    .withHomePhone(phones[0]).withMobilePhone(phones[1]).withWorkPhone(phones[2]));
+                    .withAllPhones(allPhones));
 
         }
         return users;

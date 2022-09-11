@@ -5,7 +5,6 @@ import java.util.Objects;
 public class UserData {
 
     private int id = Integer.MAX_VALUE;
-    ;
     private String firstname;
     private String lastname;
     private String email;
@@ -13,6 +12,8 @@ public class UserData {
     private String workPhone;
     private String homePhone;
     private String group;
+    private String allPhones;
+
 
 
     public int getId() {
@@ -38,6 +39,9 @@ public class UserData {
 
     public String getWorkPhone() {
         return workPhone;
+    }
+    public String getAllPhones() {
+        return allPhones;
     }
 
 
@@ -88,6 +92,12 @@ public class UserData {
         this.group = group;
         return this;
     }
+    public UserData withAllPhones(String allPhones) {
+        this.allPhones = allPhones;
+        return this;
+    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

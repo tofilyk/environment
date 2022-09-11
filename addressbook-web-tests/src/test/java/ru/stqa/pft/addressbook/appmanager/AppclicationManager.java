@@ -15,7 +15,7 @@ public class AppclicationManager {
     private SessionHelper sessionHelper;
     private NavigationHelper navigationHelper;
     private GroupHelper groupHelper;
-    public ContactHelper contactHelper;
+    public UserHelper userHelper;
 
     private String browser;
 
@@ -38,7 +38,7 @@ public class AppclicationManager {
         wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
         wd.get("http://localhost/addressbook/group.php");
         groupHelper = new GroupHelper(wd);
-        contactHelper = new ContactHelper(wd);
+        userHelper = new UserHelper(wd);
         navigationHelper = new NavigationHelper(wd);
         sessionHelper = new SessionHelper(wd);
         sessionHelper.login("admin", "secret");
@@ -64,8 +64,8 @@ public class AppclicationManager {
     }
 
 
-    public ContactHelper contact() {
-        return contactHelper;
+    public UserHelper user() {
+        return userHelper;
     }
 
     public NavigationHelper goTo() {

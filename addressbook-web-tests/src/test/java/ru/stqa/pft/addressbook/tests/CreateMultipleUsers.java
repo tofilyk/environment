@@ -15,19 +15,19 @@ public class CreateMultipleUsers extends TestBase {
 
         app.Group().ifGroupsEmptyGoCreateGroup();
         app.goTo().HomePage();
-        Users before = app.contact().all();
+        Users before = app.user().all();
 
-        int amountOfIterations = 8;
+        int amountOfIterations = 3;
         for (int i = 0; i < amountOfIterations; i++) {
 
             RandomData rd = new RandomData();
 
             UserData userData = new UserData().withFirstname(rd.randomFirstname()).withLastname(rd.randomLastname())
                     .withMobilePhone(rd.randomMobile()).withEmail(rd.randomEmail()).withGroup(null);
-            app.contactHelper.create(userData);
+            app.userHelper.create(userData);
         }
 
-        Users after = app.contact().all();
+        Users after = app.user().all();
         System.out.println("ArrayList before = " + before.size());
         System.out.println("ArrayList after = " + after.size());
         Assert.assertEquals(after.size(), before.size() + amountOfIterations);
