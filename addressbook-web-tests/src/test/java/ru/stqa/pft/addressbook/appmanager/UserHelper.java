@@ -46,6 +46,7 @@ public class UserHelper extends HelperBase {
         type(By.name("work"), userData.getWorkPhone());
         type(By.name("mobile"), userData.getMobilePhone());
         type(By.name("email"), userData.getEmail());
+        type(By.name("address"), userData.getAddress());
         if (creation) {
 
             if (checkExistsFirstGroup()) new Select(wd.findElement(By.name("new_group"))).selectByIndex(1);
@@ -119,7 +120,7 @@ public class UserHelper extends HelperBase {
 
     public void ifNotUserCreateUser() {
         if (all().size() == 0) {
-            create(new UserData().withFirstname("Kostya").withLastname("Jons").withHomePhone("111")
+            create(new UserData().withFirstname("Edward").withLastname("Parker").withAddress("SPb").withEmail("test@ya.ru").withHomePhone("111")
                     .withMobilePhone("222").withWorkPhone("333").withGroup(null));
         }
     }
@@ -138,8 +139,13 @@ public class UserHelper extends HelperBase {
             String firstname = cells.get(2).getText();
             String lastname = cells.get(1).getText();
             String allPhones = cells.get(5).getText();
-            users.add(new UserData().withId(id).withFirstname(firstname).withLastname(lastname)
-                    .withAllPhones(allPhones));
+            String allEmails = cells.get(4).getText();
+            String email=cells.get(4).getText();
+            String address=cells.get(3).getText();
+            String mobile=cells.get(5).getText();
+            users.add(new UserData().withId(id).withFirstname(firstname).withLastname(lastname).withAddress(address).withEmail(email)
+                    .withAllPhones(allPhones).withMobilePhone(mobile).withAllEmails(allEmails));
+            System.out.println(allPhones+allEmails);
 
         }
         return users;
@@ -152,9 +158,14 @@ public class UserHelper extends HelperBase {
         String home = wd.findElement(By.name("home")).getAttribute("value");
         String mobile = wd.findElement(By.name("mobile")).getAttribute("value");
         String work = wd.findElement(By.name("work")).getAttribute("value");
+        String email = wd.findElement(By.name("email")).getAttribute("value");
+        String email2 = wd.findElement(By.name("email2")).getAttribute("value");
+        String email3 = wd.findElement(By.name("email3")).getAttribute("value");
+        String address = wd.findElement(By.name("address")).getAttribute("value");
         wd.navigate().back();
         return new UserData().withId(user.getId()).withFirstname(firstname).withLastname(lastname)
-                .withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work);
+                .withAddress(address).withEmail(email).withEmail2(email2).withEmail3(email3).
+                withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work);
 
 
     }

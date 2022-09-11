@@ -21,7 +21,8 @@ public class UserModificationTest extends TestBase {
         Users before = app.user().all();
         UserData modifiedUser = before.iterator().next();
         UserData user = new UserData()
-                .withId(modifiedUser.getId()).withFirstname("Max").withLastname("Bored").withGroup(null);
+                .withId(modifiedUser.getId()).withFirstname("editFirstname").withLastname("editLastname")
+                .withAddress("editAddress").withEmail("editEmail").withMobilePhone("editMobile").withGroup(null);
         app.user().modify(user);
         assertThat(app.user().count(), equalTo(before.size()));
         Users after = app.user().all();

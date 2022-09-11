@@ -22,6 +22,24 @@ public class RandomData {
         return randLastname;
     }
 
+
+
+    List<String> address = Arrays.asList("Texas", "Virginia", "California", "Colorado","Florida");
+    String randAddress = address.get(rand.nextInt(address.size()));
+
+    public String randAddress() {
+        return randAddress;
+    }
+
+
+    List<String> email = Arrays.asList("larry@gmail.com", "ross@gmail.com", "dixon@gmail.com", "parker@gmail.com","thompson@gmail.com");
+    String randEmail = email.get(rand.nextInt(email.size()));
+
+    public String randomEmail() {
+        return randEmail;
+    }
+
+
     List<String> mobile = Arrays.asList("+79225554488", "+79652154783", "+79114785526", "+79263254815","+79251247895");
     String randMobile = mobile.get(rand.nextInt(mobile.size()));
 
@@ -30,10 +48,5 @@ public class RandomData {
     }
 
 
-    List<String> email = Arrays.asList("larry@gmail.com", "ross@gmail.com", "dixon@gmail.com", "parker@gmail.com","thompson@gmail.com");
-    String randEmail = email.get(rand.nextInt(mobile.size()));
 
-    public String randomEmail() {
-        return randEmail;
-    }
 }
