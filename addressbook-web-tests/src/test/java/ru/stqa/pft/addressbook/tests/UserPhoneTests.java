@@ -21,4 +21,8 @@ public class UserPhoneTests extends TestBase {
         assertThat(user.getWorkPhone(), equalTo(userInfoFromEditForm.getWorkPhone()));
 
     }
+
+    public String cleaned(String phone) {
+        return phone.replaceAll("\\s", "").replaceAll("[-()]", "");
+    }
 }
