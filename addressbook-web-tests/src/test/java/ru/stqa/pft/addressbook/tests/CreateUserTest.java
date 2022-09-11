@@ -19,7 +19,8 @@ public class CreateUserTest extends TestBase {
     public void testCreateUser() throws Exception {
 
         Users before = app.contact().all();
-        UserData user = new UserData().withFirstname("Kostya").withLastname("Jons").withGroup(null);
+        UserData user = new UserData().withFirstname("Kostya").withLastname("Jons").withHomePhone("111")
+                .withMobilePhone("222").withWorkPhone("333").withGroup(null);
         app.contact().create(user);
         assertThat(app.contact().count(), equalTo(before.size() + 1));
         Users after = app.contact().all();
