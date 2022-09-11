@@ -6,6 +6,13 @@ import java.util.Random;
 
 public class RandomData {
     Random rand = new Random();
+    List<String> number = Arrays.asList("1", "2", "3", "4", "5","6","7","8","9");
+    String randomNumber = number.get(rand.nextInt(number.size()));
+
+    public String randomNumber() {
+        return randomNumber;
+    }
+
 
     List<String> firstname = Arrays.asList("Larry", "Nick", "David", "Max", "Robert","James","Timothy","Edward","Samuel");
     String randomFirstname = firstname.get(rand.nextInt(firstname.size()));
