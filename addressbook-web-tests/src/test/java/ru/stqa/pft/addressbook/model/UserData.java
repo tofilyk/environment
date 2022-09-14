@@ -14,10 +14,11 @@ public class UserData {
     private String mobilePhone;
     private String workPhone;
     private String homePhone;
+    private String phone2;
     private String group;
+
     private String allPhones;
     private String allEmails;
-
 
     public String getAllEmails() {
         return allEmails;
@@ -57,6 +58,8 @@ public class UserData {
     public String getWorkPhone() {
         return workPhone;
     }
+    public String getPhone2() { return phone2; }
+
 
     public String getAllPhones() {
         return allPhones;
@@ -118,6 +121,10 @@ public class UserData {
 
     public UserData withWorkPhone(String workPhone) {
         this.workPhone = workPhone;
+        return this;
+    }
+    public UserData withPhone2(String phone2) {
+        this.phone2 = phone2;
         return this;
     }
 

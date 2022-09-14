@@ -28,11 +28,13 @@ public class CompareUserTests extends TestBase {
         assertThat(user.getAddress(), equalTo(userInfoFromEditForm.getAddress()));
         assertThat(user.getAllPhones(), equalTo(mergePhones(userInfoFromEditForm)));
         assertThat(user.getAllEmails(), equalTo(mergeEmails(userInfoFromEditForm)));
+        System.out.println("mergePhones= " + "\n" + mergePhones(userInfoFromEditForm));
+        System.out.println("mergeEmails= " + "\n" + mergeEmails(userInfoFromEditForm));
 
     }
 
     private String mergePhones(UserData userData) {
-        return Arrays.asList(userData.getHomePhone(), userData.getMobilePhone(), userData.getWorkPhone())
+        return Arrays.asList(userData.getHomePhone(), userData.getMobilePhone(), userData.getWorkPhone(), userData.getPhone2())
                 .stream().filter((s) -> !s.equals(""))
                 .map(CompareUserTests::cleaned)
                 .collect(Collectors.joining("\n"));
@@ -41,8 +43,8 @@ public class CompareUserTests extends TestBase {
     private String mergeEmails(UserData userData) {
         return Arrays.asList(userData.getEmail(), userData.getEmail2(), userData.getEmail3())
                 .stream().filter((s) -> !s.equals(""))
-                .map(CompareUserTests::cleaned)
                 .collect(Collectors.joining("\n"));
+
     }
 
     public static String cleaned(String phone) {
