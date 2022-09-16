@@ -7,12 +7,9 @@
     <list default="true" id="9b97552a-94af-4528-8481-d481120b1e41" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/generators/GroupDataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/generators/GroupDataGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/generators/UserDataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/generators/UserDataGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/resources/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/resources/groups.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/UserDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/UserDataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/groups.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/groups.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/resources/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/resources/users.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/AppclicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/AppclicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/users.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/users.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +76,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="addressbook-web-tests" type="f1a62948:ProjectNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="addressbook-web-tests" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -150,7 +153,7 @@
       <command value="gradle :compileJava" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Devel/java_ptf/addressbook-web-tests/src/test/resources/testng-users.xml">
+  <component name="RunManager" selected="TestNG.CreateUserTest (1)">
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -178,7 +181,7 @@
     <configuration name="UserDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.UserDataGenerator" />
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="-f src/test/resources/groups.json -c 3 -d json " />
+      <option name="PROGRAM_PARAMETERS" value="-f src/test/resources/users.json -c 4 -d json " />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -194,6 +197,23 @@
       <module name="addressbook-web-tests.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-users.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateUserTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.CreateUserTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -228,38 +248,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.DeleteUserTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.MyFirstProgram" />
       <item itemvalue="Application.GroupDataGenerator" />
       <item itemvalue="Application.UserDataGenerator" />
+      <item itemvalue="TestNG.CreateUserTest (1)" />
       <item itemvalue="TestNG.C:/Devel/java_ptf/addressbook-web-tests/src/test/resources/testng-users.xml" />
-      <item itemvalue="TestNG.DeleteUserTest" />
       <item itemvalue="TestNG.CreateUserTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Devel/java_ptf/addressbook-web-tests/src/test/resources/testng-users.xml" />
+        <item itemvalue="TestNG.CreateUserTest (1)" />
         <item itemvalue="Application.UserDataGenerator" />
+        <item itemvalue="TestNG.C:/Devel/java_ptf/addressbook-web-tests/src/test/resources/testng-users.xml" />
         <item itemvalue="Application.GroupDataGenerator" />
         <item itemvalue="TestNG.CreateUserTest" />
-        <item itemvalue="TestNG.DeleteUserTest" />
       </list>
     </recent_temporary>
   </component>

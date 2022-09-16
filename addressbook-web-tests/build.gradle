@@ -7,8 +7,8 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:4.4.0'
     implementation "org.slf4j:slf4j-simple:1.6.1"
     testImplementation 'org.hamcrest:hamcrest:2.2'
-    implementation 'jcom:jcom:2.2.4'
     implementation 'com.thoughtworks.xstream:xstream:1.4.19'
+    implementation 'com.beust:jcommander:1.82'
     implementation 'com.google.code.gson:gson:2.9.1'
 
 }
@@ -16,11 +16,23 @@ task testGroups(type: Test) {
     useTestNG() {
         suites 'src/test/resources/testng-groups.xml'
     }
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+    if (project.hasProperty('target')) {
+        systemProperty 'target', "${target}"
+    }
+
 }
 task testUsers(type: Test) {
     useTestNG() {
         suites 'src/test/resources/testng-users.xml'
     }
-
-    //systemProperty 'browser', "${browser}"
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+    if (project.hasProperty('target')) {
+        systemProperty 'target', "${target}"
+    }
 }
+
