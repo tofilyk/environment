@@ -17,6 +17,9 @@ import java.util.List;
 
 public class GroupDataGenerator {
 
+    //-f src/test/resources/groups.json -c 3 -d json
+    //C:\Devel\java_ptf\addressbook-web-tests
+
     @Parameter(names = "-c", description = "Group count")
     public int count;
     @Parameter(names = "-f", description = "Target file")

@@ -15,6 +15,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDataGenerator {
+    //-f src/test/resources/users.json -c 3 -d json
+    //C:\Devel\java_ptf\addressbook-web-tests
+
     @Parameter(names = "-c", description = "User count")
     public int count;
     @Parameter(names = "-f", description = "Target file")
