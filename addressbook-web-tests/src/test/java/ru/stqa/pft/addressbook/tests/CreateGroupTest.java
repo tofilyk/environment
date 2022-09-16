@@ -53,7 +53,7 @@ public class CreateGroupTest extends TestBase {
        }
     }
 
-    @Test(dataProvider = "validGroupsFromJson")
+    @Test(dataProvider = "validGroupsFromXml")
     public void testCreateGroup(GroupData group) {
         app.goTo().GroupPage();
         Groups before = app.Group().all();
