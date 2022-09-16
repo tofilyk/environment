@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9b97552a-94af-4528-8481-d481120b1e41" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/CreateGroupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/CreateGroupTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/generators/GroupDataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/generators/GroupDataGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/GroupDataGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/CreateGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/CreateGroupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/CreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/CreateUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/users.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +140,7 @@
       <recent name="ru.stqa.pft.addressbook.appmanager.appmanager1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserDataGenerator">
+  <component name="RunManager" selected="TestNG.CreateGroupTest">
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -169,7 +168,7 @@
     <configuration name="UserDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.UserDataGenerator" />
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="-f src/test/resources/users.json -c 3 -d json" />
+      <option name="PROGRAM_PARAMETERS" value="-f src/test/resources/users.xml -c 3 -d json" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -243,11 +242,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CreateGroupTest" />
+        <item itemvalue="Application.GroupDataGenerator" />
         <item itemvalue="Application.UserDataGenerator" />
         <item itemvalue="TestNG.CreateUserTest" />
         <item itemvalue="TestNG.CreateUserTest.testCreateUser" />
-        <item itemvalue="Application.GroupDataGenerator" />
-        <item itemvalue="TestNG.CreateGroupTest" />
       </list>
     </recent_temporary>
   </component>
