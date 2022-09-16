@@ -47,6 +47,7 @@ public class UserHelper extends HelperBase {
         type(By.name("mobile"), userData.getMobilePhone());
         type(By.name("email"), userData.getEmail());
         type(By.name("address"), userData.getAddress());
+        attach(By.name("photo"), userData.getPhoto());
         if (creation) {
 
             if (checkExistsFirstGroup()) new Select(wd.findElement(By.name("new_group"))).selectByIndex(1);

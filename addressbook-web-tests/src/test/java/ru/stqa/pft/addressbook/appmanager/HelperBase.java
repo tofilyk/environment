@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
+import java.io.File;
+
 public class HelperBase {
 
     protected WebDriver wd;
@@ -29,6 +31,15 @@ public class HelperBase {
 
     }
 
+    protected void attach(By locator, File file) {
+        if (file != null) {
+
+            wd.findElement(locator).sendKeys(file.getAbsolutePath());
+        }
+
+    }
+
+
     public boolean isAlertPresent() {
         try {
             wd.switchTo().alert().accept();
@@ -37,6 +48,7 @@ public class HelperBase {
             return false;
         }
     }
+
     public boolean confirmAlertForDeleteUsers() {
         try {
             wd.switchTo().alert().accept();
@@ -45,11 +57,14 @@ public class HelperBase {
             return false;
         }
     }
+
     public boolean checkElement(By locator) {
         wd.findElement(locator);
         return true;
 
-    };
+    }
+
+    ;
 
     public boolean isElementPresent(By locator) {
         try {
