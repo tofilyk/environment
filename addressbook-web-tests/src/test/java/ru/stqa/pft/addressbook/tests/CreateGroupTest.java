@@ -21,6 +21,20 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class CreateGroupTest extends TestBase {
 
+
+    @DataProvider
+    public Iterator<Object[]> validGroupsFromJson() throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.json")));
+        String json = "";
+        String line = reader.readLine();
+        while (line != null) {
+            json += line;
+            line = reader.readLine();
+        }
+        Gson gson = new Gson();
+        List<GroupData> groups = gson.fromJson(json, new TypeToken<List<GroupData>>() {}.getType());
+        return groups.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
+    }
     @DataProvider
     public Iterator<Object[]> validGroupsFromXml() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.xml")));
@@ -36,23 +50,7 @@ public class CreateGroupTest extends TestBase {
         return groups.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
 
     }
-
-    @DataProvider
-    public Iterator<Object[]> validGroupsFromJson() throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.json")));
-        String json = "";
-        String line = reader.readLine();
-        while (line != null) {
-            json += line;
-            line = reader.readLine();
-        }
-        Gson gson = new Gson();
-        List<GroupData> groups = gson.fromJson(json, new TypeToken<List<GroupData>>() {}.getType());
-        return groups.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
-
-    }
-
-    @Test(dataProvider = "validGroupsFromJson")
+    @Test(dataProvider = "validGroupsFromXml")
     public void testCreateGroup(GroupData group) {
         app.goTo().GroupPage();
         Groups before = app.Group().all();
@@ -62,7 +60,6 @@ public class CreateGroupTest extends TestBase {
         assertThat(after, equalTo(
                 before.withAdded(group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
     }
-
     @Test(enabled = false)
     public void testCreateBadGroup() throws Exception {
         app.goTo().GroupPage();
