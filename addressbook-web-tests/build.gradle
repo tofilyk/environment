@@ -10,5 +10,6 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:4.4.0'
     implementation "org.slf4j:slf4j-simple:1.6.1"
     testImplementation 'org.hamcrest:hamcrest:2.2'
+    implementation 'jcom:jcom:2.2.4'
 
 }
