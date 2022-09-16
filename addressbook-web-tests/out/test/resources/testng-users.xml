@@ -7,7 +7,6 @@
             <class name="ru.stqa.pft.addressbook.tests.CreateUserTest" />
             <class name="ru.stqa.pft.addressbook.tests.UserModificationTest" />
             <class name="ru.stqa.pft.addressbook.tests.DeleteUserTest" />
-
         </classes>
     </test>
 </suite>
