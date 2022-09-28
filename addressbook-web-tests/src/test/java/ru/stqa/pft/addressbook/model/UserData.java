@@ -1,35 +1,65 @@
 package ru.stqa.pft.addressbook.model;
 
 import com.google.gson.annotations.Expose;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
 import java.io.File;
 import java.util.Objects;
 
+@Entity
+@Table(name = "addressbook")
 public class UserData {
-
+    @Id
+    @Column(name = "id")
     private int id = Integer.MAX_VALUE;
     @Expose
+    @Column(name = "firstname")
     private String firstname;
     @Expose
+    @Column(name = "lastname")
     private String lastname;
     @Expose
+    @Column(name = "address")
+    @Type(type = "text")
     private String address;
     @Expose
+    @Column(name = "email")
+    @Type(type = "text")
     private String email;
+    @Column(name = "email2")
+    @Type(type = "text")
     private String email2;
+    @Column(name = "email3")
+    @Type(type = "text")
     private String email3;
     @Expose
+    @Column(name = "mobile")
+    @Type(type = "text")
     private String mobilePhone;
+    @Column(name = "work")
+    @Type(type = "text")
     private String workPhone;
+    @Column(name = "home")
+    @Type(type = "text")
     private String homePhone;
+    @Transient
     private String phone2;
+    @Transient
     private String group;
+    @Transient
     private String allPhones;
+    @Transient
     private String allEmails;
 
-    public File getPhoto() { return photo; }
+    @Column(name = "photo")
+    @Type(type = "text")
+    private String photo;
 
-    private File photo;
+    public File getPhoto() {
+        return new File(photo);
+    }
+
     public String getAllEmails() {
         return allEmails;
     }
@@ -45,6 +75,7 @@ public class UserData {
     public String getLastname() {
         return lastname;
     }
+
     public String getAddress() {
         return address;
     }
@@ -68,7 +99,10 @@ public class UserData {
     public String getWorkPhone() {
         return workPhone;
     }
-    public String getPhone2() { return phone2; }
+
+    public String getPhone2() {
+        return phone2;
+    }
 
 
     public String getAllPhones() {
@@ -98,6 +132,7 @@ public class UserData {
         this.lastname = lastname;
         return this;
     }
+
     public UserData withAddress(String address) {
         this.address = address;
         return this;
@@ -133,6 +168,7 @@ public class UserData {
         this.workPhone = workPhone;
         return this;
     }
+
     public UserData withPhone2(String phone2) {
         this.phone2 = phone2;
         return this;
@@ -152,8 +188,9 @@ public class UserData {
         this.allEmails = allEmails;
         return this;
     }
+
     public UserData withPhoto(File photo) {
-        this.photo = photo;
+        this.photo = photo.getPath();
         return this;
     }
 
