@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/Easy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ru/stqa/oft/sandbox/Easy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/DbConnectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/DbConnectionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/model/GroupData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/model/GroupData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/HbConnectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/HbConnectionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DbConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DbConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T160938.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T161013.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T161140.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,11 +69,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="addressbook-web-tests" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="addressbook-web-tests" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -105,11 +97,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -173,30 +169,7 @@
       <command value="gradle " />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CreateUserTest">
-    <configuration name="GroupModificationTest (2)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.pft.addressbook.tests.GroupModificationTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.HbConnectionTest">
     <configuration name="gradle-wrapper.jar" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/../addressbook-web-tests/gradle/wrapper/gradle-wrapper.jar" />
       <method v="2" />
@@ -235,6 +208,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DbConnectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.DbConnectionTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DeleteAllUsersTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -252,7 +242,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HbConnectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -261,7 +251,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.GroupModificationTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.HbConnectionTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -270,20 +260,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.GroupModificationTest (2)" />
       <item itemvalue="JAR Application.gradle-wrapper.jar" />
       <item itemvalue="TestNG.CreateGroupTest" />
       <item itemvalue="TestNG.CreateUserTest" />
+      <item itemvalue="TestNG.DbConnectionTest" />
       <item itemvalue="TestNG.DeleteAllUsersTest" />
-      <item itemvalue="TestNG.GroupModificationTest" />
+      <item itemvalue="TestNG.HbConnectionTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HbConnectionTest" />
+        <item itemvalue="TestNG.DbConnectionTest" />
         <item itemvalue="TestNG.CreateUserTest" />
         <item itemvalue="TestNG.DeleteAllUsersTest" />
         <item itemvalue="TestNG.CreateGroupTest" />
-        <item itemvalue="TestNG.GroupModificationTest" />
-        <item itemvalue="Gradle.GroupModificationTest (2)" />
       </list>
     </recent_temporary>
   </component>
