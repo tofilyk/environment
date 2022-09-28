@@ -1,18 +1,15 @@
 package ru.stqa.pft.addressbook.tests;
-
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
-
 import java.sql.*;
 
-public class DbConnectionTest {
 
+public class DbConnectionTest {
 
     @Test
     public void testDbConnection() {
         Connection conn = null;
-
         try {
 
             conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/addressbook?user=root&password=");

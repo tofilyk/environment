@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 public class TestBase {
-    Logger logger = LoggerFactory.getLogger(TestBase.class);
+   Logger logger = LoggerFactory.getLogger(TestBase.class);
 
 
     protected static final AppclicationManager app = new AppclicationManager(System.getProperty("browser", BrowserType.CHROME));
