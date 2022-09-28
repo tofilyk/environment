@@ -28,7 +28,7 @@ public class CreateUserTest extends TestBase {
             app.Group().create(new GroupData().withName("test1"));
             app.goTo().HomePage();
         }
-    }
+  }
 
     @DataProvider
     public Iterator<Object[]> validUsersFromJson() throws IOException {
