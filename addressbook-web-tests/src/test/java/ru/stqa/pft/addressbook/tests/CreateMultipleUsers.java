@@ -23,7 +23,7 @@ public class CreateMultipleUsers extends TestBase {
             RandomData rd = new RandomData();
 
             UserData userData = new UserData().withFirstname(rd.randomFirstname()).withLastname(rd.randomLastname())
-                    .withAddress(rd.randAddress()).withEmail(rd.randomEmail()).withMobilePhone(rd.randomMobile()).withGroup(null);
+                    .withAddress(rd.randAddress()).withEmail(rd.randomEmail()).withMobilePhone(rd.randomMobile());
             app.userHelper.create(userData);
         }
 

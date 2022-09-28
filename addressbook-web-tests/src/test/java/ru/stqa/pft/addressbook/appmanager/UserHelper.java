@@ -119,12 +119,12 @@ public class UserHelper extends HelperBase {
 
     // public boolean isThereAUser() { return isElementPresent(By.name("selected[]"));}
 
-    public void ifNotUserCreateUser() {
-        if (all().size() == 0) {
-            create(new UserData().withFirstname("Edward").withLastname("Parker").withAddress("SPb").withEmail("test@ya.ru").withHomePhone("111")
-                    .withMobilePhone("222").withWorkPhone("333").withGroup(null));
-        }
-    }
+//    public void ifNotUserCreateUser() {
+//        if (all().size() == 0) {
+//            create(new UserData().withFirstname("Edward").withLastname("Parker").withAddress("SPb").withEmail("test@ya.ru").withHomePhone("111")
+//                    .withMobilePhone("222").withWorkPhone("333").withGroup(null));
+//        }
+//    }
 
     public int count() {
         return wd.findElements(By.name("selected[]")).size();

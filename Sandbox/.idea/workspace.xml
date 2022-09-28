@@ -6,53 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/GroupModificationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/GroupModificationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/TestBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/CreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/CreateUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupModificationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T165935.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T170052.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T174813.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T175513.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T175835.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T184310.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T184500.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T185046.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T190239.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T190339.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T190439.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T190512.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T190614.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T191059.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T194736.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T195138.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T195542.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T195704.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T195804.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T195833.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T200030.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T200059.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T200131.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T200152.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T201238.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T201254.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T201455.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T201545.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T202203.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T202321.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T202458.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T202534.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T202558.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T202709.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T203149.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T203215.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T203516.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T203624.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/test-20220928T203840.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/UserHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/UserHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/model/GroupData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/model/GroupData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/model/UserData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/model/UserData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/CreateMultipleUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/CreateMultipleUsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/DeleteUserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/HbConnectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/HbConnectionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/UserModificationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/UserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/UserHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/GroupData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/CreateMultipleUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/CreateMultipleUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DeleteUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DeleteUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/HbConnectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +172,7 @@
       <command value="gradle " />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.GroupModificationTest">
+  <component name="RunManager" selected="TestNG.HbConnectionTest">
     <configuration name="gradle-wrapper.jar" type="JarApplication">
       <option name="JAR_PATH" value="$PROJECT_DIR$/../addressbook-web-tests/gradle/wrapper/gradle-wrapper.jar" />
       <method v="2" />
@@ -317,8 +283,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupModificationTest" />
         <item itemvalue="TestNG.HbConnectionTest" />
+        <item itemvalue="TestNG.GroupModificationTest" />
         <item itemvalue="TestNG.UserModificationTest" />
         <item itemvalue="TestNG.DeleteUserTest" />
         <item itemvalue="TestNG.CreateUserTest" />

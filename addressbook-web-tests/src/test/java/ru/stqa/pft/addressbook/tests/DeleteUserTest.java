@@ -15,7 +15,7 @@ public class DeleteUserTest extends TestBase {
             app.goTo().HomePage();
             app.user().create(new UserData().withFirstname("Edward").withLastname("Parker").withAddress("SPb")
                     .withEmail("test@ya.ru").withHomePhone("111")
-                    .withMobilePhone("222").withWorkPhone("333").withGroup(null));
+                    .withMobilePhone("222").withWorkPhone("333"));
         }
     }
     @Test//(enabled = false)
