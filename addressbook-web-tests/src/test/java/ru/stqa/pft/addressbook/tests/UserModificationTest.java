@@ -12,20 +12,24 @@ public class UserModificationTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {
-        app.goTo().HomePage();
-        app.user().ifNotUserCreateUser();
+        if (app.db().users().size() == 0) {
+            app.goTo().HomePage();
+            app.user().create(new UserData().withFirstname("Edward").withLastname("Parker").withAddress("SPb")
+                    .withEmail("test@ya.ru").withHomePhone("111")
+                    .withMobilePhone("222").withWorkPhone("333").withGroup(null));
+        }
     }
 
     @Test//(enabled = false)
     public void UserModificationTest() throws Exception {
-        Users before = app.user().all();
+        Users before = app.db().users();
         UserData modifiedUser = before.iterator().next();
         UserData user = new UserData()
                 .withId(modifiedUser.getId()).withFirstname("editFirstname").withLastname("editLastname")
                 .withAddress("editAddress").withEmail("editEmail").withMobilePhone("editMobile").withGroup(null);
         app.user().modify(user);
         assertThat(app.user().count(), equalTo(before.size()));
-        Users after = app.user().all();
+        Users after = app.db().users();
         assertThat(after, equalTo(before.withOut(modifiedUser).withAdded(user)));
     }
 }

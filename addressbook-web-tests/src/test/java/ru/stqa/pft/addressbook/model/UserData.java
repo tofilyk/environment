@@ -54,10 +54,13 @@ public class UserData {
 
     @Column(name = "photo")
     @Type(type = "text")
-    private String photo;
+    @Transient
+    private File photo;
 
-    public File getPhoto() {
-        return new File(photo);
+    public File getPhoto() { return  photo; }
+    public UserData withPhoto(File photo) {
+        this.photo = photo;
+        return this;
     }
 
     public String getAllEmails() {
@@ -189,10 +192,7 @@ public class UserData {
         return this;
     }
 
-    public UserData withPhoto(File photo) {
-        this.photo = photo.getPath();
-        return this;
-    }
+
 
 
     @Override

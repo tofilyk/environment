@@ -7,6 +7,8 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
+import ru.stqa.pft.addressbook.model.UserData;
+import ru.stqa.pft.addressbook.model.Users;
 
 import java.util.List;
 
@@ -18,7 +20,6 @@ public class DbHelper {
         final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
                 .configure()
                 .build();
-
         sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
 
     }
@@ -27,10 +28,19 @@ public class DbHelper {
     public Groups groups() {
         Session session = sessionFactory.openSession();
         session.beginTransaction();
-        List<GroupData> result = session.createQuery("from GroupData ").list();
+        List<GroupData> result = session.createQuery("from GroupData").list();
         session.getTransaction().commit();
         session.close();
         return new Groups(result);
+
+    }
+    public Users users() {
+        Session session = sessionFactory.openSession();
+        session.beginTransaction();
+        List<UserData> result = session.createQuery("from UserData").list();
+        session.getTransaction().commit();
+        session.close();
+        return new Users(result);
 
     }
 }
