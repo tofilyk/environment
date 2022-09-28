@@ -11,18 +11,19 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class GroupDeleteTest extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
-        app.goTo().GroupPage();
-        app.Group().ifGroupsEmptyGoCreateGroup();
-    }
+        if (app.db().groups().size()==0){
+            app.goTo().GroupPage();
+            app.Group().create(new GroupData().withName("test1"));
+        }}
 
     @Test//(enabled = false)
     public void testGroupDelete() throws Exception {
 
-        Groups before = app.Group().all();
+        Groups before = app.db().groups();
         GroupData deletedGroup = before.iterator().next();
         app.Group().delete(deletedGroup);
         assertThat(app.Group().count(), equalTo(before.size() - 1));
-        Groups after = app.Group().all();
+        Groups after = app.db().groups();
         assertThat(after, equalTo(before.withOut(deletedGroup)));
     }
 }
