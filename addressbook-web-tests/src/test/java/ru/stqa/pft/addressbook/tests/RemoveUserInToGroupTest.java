@@ -33,7 +33,7 @@ public class RemoveUserInToGroupTest extends TestBase {
     public void RemoveUserInToGroup() throws Exception {
         Users before = app.db().users();
         UserData removeuser = before.iterator().next();
-        app.user().removeUserInToGroup(removeuser);
+        app.user().removeUserFromGroup(removeuser);
         assertThat(app.user().count(), equalTo(before.size()));
         Users after = app.db().users();
         assertThat(after, equalTo(before.withOut(removeuser).withAdded(removeuser)));

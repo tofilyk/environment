@@ -63,7 +63,6 @@ public class UserHelper extends HelperBase {
     }
 
 
-
     public void initUserModificationById(int id) {
 
         wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))).click();
@@ -107,7 +106,8 @@ public class UserHelper extends HelperBase {
 
 
     }
-    public void removeUserInToGroup(UserData user) {
+
+    public void removeUserFromGroup(UserData user) {
         navigationHelper.HomePage();
         chooseGroup();
         selectUserById(user.getId());
@@ -115,14 +115,15 @@ public class UserHelper extends HelperBase {
         navigationHelper.GroupPage();
         navigationHelper.HomePage();
     }
+
     public void confirmRemoveUserInToGroup() {
 
         click(By.name("remove"));
     }
-    public void chooseGroup() {
 
+    public void chooseGroup() {
         wd.findElement(By.name("group")).click();
-        new Select(wd.findElement(By.name("group"))).selectByVisibleText("FirstGroup");
+        new Select(wd.findElement(By.name("group"))).selectByIndex(2);
     }
 
     public void delete(UserData user) {
@@ -209,7 +210,7 @@ public class UserHelper extends HelperBase {
 
         for (WebElement element : elements) {
             List<WebElement> cells = element.findElements(By.tagName("group"));
-            String test =cells.get(1).getText();
+            String test = cells.get(1).getText();
             System.out.println(test);
 
         }
