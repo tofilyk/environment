@@ -1,19 +1,15 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.UserData;
 import ru.stqa.pft.addressbook.model.Users;
 
-import java.util.List;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class AddUserInToGroupTest extends TestBase {
+public class RemoveUserInToGroupTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions1() {
@@ -33,33 +29,16 @@ public class AddUserInToGroupTest extends TestBase {
         }
     }
 
-
     @Test//(enabled = false)
-    public void AddUserInToGroup() throws Exception {
+    public void RemoveUserInToGroup() throws Exception {
         Users before = app.db().users();
-        UserData moveuser = before.iterator().next();
-        app.user().addUserInToGroup(moveuser);
+        UserData removeuser = before.iterator().next();
+        app.user().removeUserInToGroup(removeuser);
         assertThat(app.user().count(), equalTo(before.size()));
         Users after = app.db().users();
-        assertThat(after, equalTo(before.withOut(moveuser).withAdded(moveuser)));
+        assertThat(after, equalTo(before.withOut(removeuser).withAdded(removeuser)));
 
 
     }
-
-    @Test
-    public void groups() {
-        List<WebElement> elements = app.wd.findElements(By.name("to_group"));
-        String lastname =elements.get(0).getText();
-        String eleString = String.valueOf(app.wd.findElement(By.name("group")).getSize());
-
-
-
-
-        System.out.println("lastname " + lastname);
-        System.out.println("eleString " + eleString);
-
-
-    }
-
 
 }

@@ -24,7 +24,8 @@ public class UserHelper extends HelperBase {
     public void initCreateUser() {
         click(By.linkText("add new"));
     }
-    public void addUserInToGroup()  {
+
+    public void addUserInToGroup() {
         click(By.name("add"));
     }
 
@@ -60,6 +61,8 @@ public class UserHelper extends HelperBase {
         }
 
     }
+
+
 
     public void initUserModificationById(int id) {
 
@@ -103,8 +106,25 @@ public class UserHelper extends HelperBase {
         navigationHelper.HomePage();
 
 
-
     }
+    public void removeUserInToGroup(UserData user) {
+        navigationHelper.HomePage();
+        chooseGroup();
+        selectUserById(user.getId());
+        confirmRemoveUserInToGroup();
+        navigationHelper.GroupPage();
+        navigationHelper.HomePage();
+    }
+    public void confirmRemoveUserInToGroup() {
+
+        click(By.name("remove"));
+    }
+    public void chooseGroup() {
+
+        wd.findElement(By.name("group")).click();
+        new Select(wd.findElement(By.name("group"))).selectByVisibleText("FirstGroup");
+    }
+
     public void delete(UserData user) {
         navigationHelper.HomePage();
         selectUserById(user.getId());
@@ -183,6 +203,18 @@ public class UserHelper extends HelperBase {
 
     }
 
+    public Users groups() {
+        Users groups = new Users();
+        List<WebElement> elements = wd.findElements(By.name("group"));
+
+        for (WebElement element : elements) {
+            List<WebElement> cells = element.findElements(By.tagName("group"));
+            String test =cells.get(1).getText();
+            System.out.println(test);
+
+        }
+        return groups;
+    }
 }
 
 
