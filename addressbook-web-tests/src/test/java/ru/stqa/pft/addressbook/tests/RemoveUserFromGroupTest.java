@@ -9,7 +9,7 @@ import ru.stqa.pft.addressbook.model.Users;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class RemoveUserInToGroupTest extends TestBase {
+public class RemoveUserFromGroupTest extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions1() {
@@ -30,7 +30,7 @@ public class RemoveUserInToGroupTest extends TestBase {
     }
 
     @Test//(enabled = false)
-    public void RemoveUserInToGroup() throws Exception {
+    public void RemoveUserFromGroup() throws Exception {
         Users before = app.db().users();
         UserData removeuser = before.iterator().next();
         app.user().removeUserFromGroup(removeuser);
