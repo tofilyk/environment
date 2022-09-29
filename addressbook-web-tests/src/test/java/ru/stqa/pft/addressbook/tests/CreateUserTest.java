@@ -23,7 +23,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class CreateUserTest extends TestBase {
     @BeforeMethod
     public void ensurePreconditions() {
-        if (app.db().users().size() == 0) {
+        if (app.db().groups().size() == 0) {
             app.goTo().GroupPage();
             app.Group().create(new GroupData().withName("test1"));
             app.goTo().HomePage();

@@ -24,6 +24,9 @@ public class UserHelper extends HelperBase {
     public void initCreateUser() {
         click(By.linkText("add new"));
     }
+    public void addUserInToGroup()  {
+        click(By.name("add"));
+    }
 
     public void submitUserCreation() {
         click(By.name("submit"));
@@ -93,8 +96,17 @@ public class UserHelper extends HelperBase {
         returnHomePage();
     }
 
+    public void addUserInToGroup(UserData user) {
+        navigationHelper.HomePage();
+        selectUserById(user.getId());
+        addUserInToGroup();
+        navigationHelper.HomePage();
 
+
+
+    }
     public void delete(UserData user) {
+        navigationHelper.HomePage();
         selectUserById(user.getId());
         initDeleteUser();
         confirmAlertForDeleteUsers();
