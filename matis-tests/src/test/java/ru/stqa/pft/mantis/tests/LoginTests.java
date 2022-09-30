@@ -6,9 +6,9 @@ import ru.stqa.pft.mantis.appmanager.HttpSession;
 public class LoginTests extends TestBase {
 
     @Test
-    public void testLogin() {
+    public void testLogin() throws Exception {
         HttpSession session = app.newSession();
-        //session.login("administrator", "root");
+       session.login("administrator", "root");
 
     }
 }

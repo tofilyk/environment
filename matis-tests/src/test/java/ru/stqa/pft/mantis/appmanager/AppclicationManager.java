@@ -1,6 +1,5 @@
 package ru.stqa.pft.mantis.appmanager;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,8 +14,10 @@ import java.util.Properties;
 
 public class AppclicationManager {
     private final Properties properties;
-    public WebDriver wd;
+    private WebDriver wd;
     private String browser;
+    private RegistrationHelper registrationHelper;
+
 
     public AppclicationManager(String browser) {
         this.browser = browser;
@@ -27,31 +28,13 @@ public class AppclicationManager {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
 
-        if (browser.equals(BrowserType.CHROME)) {
-            wd = new ChromeDriver();
-        } else if (browser.equals(BrowserType.FIREFOX)) {
-            wd = new FirefoxDriver();
-        } else if (browser.equals(BrowserType.IE)) {
-            wd = new InternetExplorerDriver();
-        }
 
-        wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
-        wd.get(properties.getProperty("web.baseUrl"));
-
-    }
-
-    private void login(String username, String pass) {
-        wd.findElement(By.name("user")).click();
-        wd.findElement(By.name("user")).clear();
-        wd.findElement(By.name("user")).sendKeys(username);
-        wd.findElement(By.name("pass")).click();
-        wd.findElement(By.name("pass")).clear();
-        wd.findElement(By.name("pass")).sendKeys(pass);
-        wd.findElement(By.xpath("//input[@value='Login']")).click();
     }
 
     public void stop() {
-        wd.quit();
+        if (wd != null) {
+            wd.quit();
+        }
     }
 
     public HttpSession newSession() {
@@ -63,4 +46,28 @@ public class AppclicationManager {
     }
 
 
-}
+    public RegistrationHelper registration() {
+        if (registrationHelper == null) {
+            registrationHelper = new RegistrationHelper(this);
+        }
+        return   registrationHelper;
+    }
+
+        public WebDriver getDriver () {
+            if (wd == null) {
+                if (browser.equals(BrowserType.CHROME)) {
+                    wd = new ChromeDriver();
+                } else if (browser.equals(BrowserType.FIREFOX)) {
+                    wd = new FirefoxDriver();
+                } else if (browser.equals(BrowserType.IE)) {
+                    wd = new InternetExplorerDriver();
+                }
+
+                wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
+                wd.get(properties.getProperty("web.baseUrl"));
+
+
+            }
+            return wd;
+        }
+    }
