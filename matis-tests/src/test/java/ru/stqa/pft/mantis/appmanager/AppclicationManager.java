@@ -17,6 +17,7 @@ public class AppclicationManager {
     private WebDriver wd;
     private String browser;
     private RegistrationHelper registrationHelper;
+    private FtpHelper ftp;
 
 
     public AppclicationManager(String browser) {
@@ -50,24 +51,31 @@ public class AppclicationManager {
         if (registrationHelper == null) {
             registrationHelper = new RegistrationHelper(this);
         }
-        return   registrationHelper;
+        return registrationHelper;
     }
 
-        public WebDriver getDriver () {
-            if (wd == null) {
-                if (browser.equals(BrowserType.CHROME)) {
-                    wd = new ChromeDriver();
-                } else if (browser.equals(BrowserType.FIREFOX)) {
-                    wd = new FirefoxDriver();
-                } else if (browser.equals(BrowserType.IE)) {
-                    wd = new InternetExplorerDriver();
-                }
-
-                wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
-                wd.get(properties.getProperty("web.baseUrl"));
-
-
-            }
-            return wd;
+    public FtpHelper ftp() {
+        if (ftp == null) {
+            ftp = new FtpHelper(this);
         }
+        return ftp;
     }
+
+    public WebDriver getDriver() {
+        if (wd == null) {
+            if (browser.equals(BrowserType.CHROME)) {
+                wd = new ChromeDriver();
+            } else if (browser.equals(BrowserType.FIREFOX)) {
+                wd = new FirefoxDriver();
+            } else if (browser.equals(BrowserType.IE)) {
+                wd = new InternetExplorerDriver();
+            }
+
+            wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
+            wd.get(properties.getProperty("web.baseUrl"));
+
+
+        }
+        return wd;
+    }
+}

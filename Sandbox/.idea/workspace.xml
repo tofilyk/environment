@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21">
-      <change afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../matis-tests/src/test/resources/config_inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/DbConnectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/DbConnectionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DbConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DbConnectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../matis-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/AppclicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/AppclicationManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/tests/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/tests/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/resources/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/AppclicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/AppclicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/resources/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,6 +344,21 @@
           <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DeleteUserTest.java</url>
           <line>24</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationsTests.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
