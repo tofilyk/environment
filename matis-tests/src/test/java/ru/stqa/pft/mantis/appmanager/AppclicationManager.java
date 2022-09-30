@@ -13,11 +13,8 @@ import java.time.Duration;
 import java.util.Properties;
 
 public class AppclicationManager {
-
     private final Properties properties;
     public WebDriver wd;
-
-
     private String browser;
 
     public AppclicationManager(String browser) {
