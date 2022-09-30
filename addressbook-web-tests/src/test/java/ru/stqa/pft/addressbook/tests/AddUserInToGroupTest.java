@@ -38,6 +38,8 @@ public class AddUserInToGroupTest extends TestBase {
         assertThat(app.user().count(), equalTo(before.size()));
         Users after = app.db().users();
         assertThat(after, equalTo(before.withOut(moveuser).withAdded(moveuser)));
+        System.out.println("7777777777777 " + app.db().users());
+
 
 
     }

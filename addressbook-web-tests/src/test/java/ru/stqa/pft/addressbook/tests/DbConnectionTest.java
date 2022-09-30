@@ -1,7 +1,11 @@
 package ru.stqa.pft.addressbook.tests;
+
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
+import ru.stqa.pft.addressbook.model.UserData;
+import ru.stqa.pft.addressbook.model.Users;
+
 import java.sql.*;
 
 
@@ -25,6 +29,30 @@ public class DbConnectionTest {
                 System.out.println(groups);
             }
 
+        } catch (SQLException ex) {
+            // handle any errors
+            System.out.println("SQLException: " + ex.getMessage());
+            System.out.println("SQLState: " + ex.getSQLState());
+            System.out.println("VendorError: " + ex.getErrorCode());
+        }
+    }
+    @Test
+    public void testDbConnectionUsers() {
+        Connection conn = null;
+        try {
+
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/addressbook?user=root&password=");
+
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery("select id from address_in_groups");
+            Users users = new Users();
+            while (rs.next()) {
+                users.add(new UserData().withId(rs.getInt("id")));
+                rs.close();
+                st.close();
+                conn.close();
+                System.out.println(users);
+            }
         } catch (SQLException ex) {
             // handle any errors
             System.out.println("SQLException: " + ex.getMessage());
