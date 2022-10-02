@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21">
-      <change afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HelperBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/MailHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/model/MailMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/AppclicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/AppclicationManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/tests/RegistrationsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/tests/RegistrationsTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/resources/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/AppclicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/AppclicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/resources/config_inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/resources/config_inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/resources/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,14 +344,9 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HelperBase.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
