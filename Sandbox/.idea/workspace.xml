@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/RegistrationHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/RegistrationHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/HttpSession.class" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/HttpSession.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/tests/LoginTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/tests/LoginTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,8 +281,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.RegistrationsTests" />
-        <item itemvalue="TestNG.HbConnectionTest" />
         <item itemvalue="TestNG.LoginTests" />
+        <item itemvalue="TestNG.HbConnectionTest" />
         <item itemvalue="Gradle.LoginTests" />
         <item itemvalue="TestNG.DbConnectionTest.testDbConnectionUsers" />
       </list>
@@ -337,8 +339,18 @@
           <line>24</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="ru.stqa.pft.mantis.appmanager.HttpSession" memberName="httpClient" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -36,7 +36,7 @@ public class HttpSession {
         post.setEntity(new UrlEncodedFormEntity(params));
         CloseableHttpResponse response = httpClient.execute(post);
         String body = geTextFrom(response);
-        return body.contains(String.format("", username));
+        return body.contains(String.format("<span class=\"user-info\">%s</span>", username));
 
 
     }
@@ -54,7 +54,7 @@ public class HttpSession {
         HttpGet get = new HttpGet(app.getProperty("web.baseUrl") + "/login.php");
         CloseableHttpResponse response = httpClient.execute(get);
         String body = geTextFrom(response);
-        return body.contains(String.format("", username));
+        return body.contains(String.format("<span class=\"user-info\">%s</span>", username));
 
 
     }
