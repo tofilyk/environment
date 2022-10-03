@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0d282cf-6250-497e-8863-13db194c702e" name="Changes" comment="upd21">
-      <change afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/AppclicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/AppclicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/tests/RegistrationsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/tests/RegistrationsTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/resources/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/AppclicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/AppclicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/resources/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/RegistrationHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/RegistrationHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +217,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HbConnectionTest.testHbConnection" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HbConnectionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -232,8 +227,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.HbConnectionTest" />
-      <option name="METHOD_NAME" value="testHbConnection" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -278,17 +272,17 @@
       <item itemvalue="Gradle.LoginTests" />
       <item itemvalue="JAR Application.gradle-wrapper.jar" />
       <item itemvalue="TestNG.DbConnectionTest.testDbConnectionUsers" />
-      <item itemvalue="TestNG.HbConnectionTest.testHbConnection" />
       <item itemvalue="TestNG.LoginTests" />
       <item itemvalue="TestNG.RegistrationsTests" />
+      <item itemvalue="TestNG.HbConnectionTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.RegistrationsTests" />
+        <item itemvalue="TestNG.HbConnectionTest" />
         <item itemvalue="TestNG.LoginTests" />
         <item itemvalue="Gradle.LoginTests" />
         <item itemvalue="TestNG.DbConnectionTest.testDbConnectionUsers" />
-        <item itemvalue="TestNG.HbConnectionTest.testHbConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -342,11 +336,6 @@
           <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DeleteUserTest.java</url>
           <line>24</line>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../matis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HelperBase.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
